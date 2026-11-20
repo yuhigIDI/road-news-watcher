@@ -11,19 +11,29 @@ from openpyxl.worksheet.datavalidation import DataValidation
 from .store import flat_row
 
 
-def write_viewer_data(path, items, classifier, generated):
+def _gnews_link(c):
+    import urllib.parse
+    hl, gl = (c.get("gn") or "en:US").split(":")
+    q = f'"{c["name_en"]}" (road OR highway OR expressway OR bridge OR toll OR transport)'
+    return ("https://news.google.com/search?q=" + urllib.parse.quote(q) +
+            f"&hl={hl}&gl={gl}&ceid={gl}:{hl}")
+
+
+def write_viewer_data(path, items, classifier, generated, sources_cfg=None):
     meta = {
         "generated": generated,
         "regions": {},
         "categories": [name for name, _ in classifier.categories],
     }
     for c in classifier.countries:
-        meta["regions"].setdefault(c["region"], []).append({"code": c["code"], "name": c["name_ja"]})
+        meta["regions"].setdefault(c["region"], []).append(
+            {"code": c["code"], "name": c["name_ja"], "gn": _gnews_link(c)})
     slim = [{
         "id": it["id"], "c": it["collected"], "p": (it.get("published") or "")[:10],
         "t": it["title"], "j": it.get("title_ja", ""), "s": it.get("source", ""), "u": it["url"],
         "co": it.get("countries", []), "ca": it.get("categories", []), "sc": it.get("score", 0),
-        "su": (it.get("summary") or "")[:300],
+        "su": (it.get("summary") or "")[:300], "sj": it.get("summary_ja", ""),
+        "b": 1 if it.get("has_body") else 0,
     } for it in sorted(items, key=lambda x: (x["collected"], x.get("score", 0)), reverse=True)]
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -40,16 +50,16 @@ def write_excel(path, items, classifier):
     wb = Workbook()
     ws = wb.active
     ws.title = "候補記事"
-    head = ["選定", "地域", "国", "分類", "関連度", "公開日", "見出し（原文）", "見出し（和訳）", "媒体", "URL", "概要"]
+    head = ["選定", "地域", "国", "分類", "関連度", "公開日", "見出し（原文）", "見出し（和訳）", "媒体", "URL", "概要", "概要（和訳）"]
     ws.append(head)
     for it in _sorted_for_report(items, classifier):
         r = flat_row(it)
         ws.append(["", r["region"], r["country"], r["categories"], r["score"], r["published"] or r["collected"],
-                   r["title"], r["title_ja"], r["source"], r["url"], r["summary"]])
+                   r["title"], r["title_ja"], r["source"], r["url"], r["summary"], it.get("summary_ja", "")])
         cell = ws.cell(row=ws.max_row, column=10)
         cell.hyperlink = r["url"]
         cell.font = Font(color="1F4E79", underline="single")
-    widths = [6, 14, 12, 28, 7, 11, 60, 50, 22, 40, 60]
+    widths = [6, 14, 12, 28, 7, 11, 60, 50, 22, 40, 60, 60]
     for i, w in enumerate(widths, 1):
         ws.column_dimensions[ws.cell(row=1, column=i).column_letter].width = w
     for c in ws[1]:
@@ -58,7 +68,7 @@ def write_excel(path, items, classifier):
         c.alignment = Alignment(vertical="center")
     for row in ws.iter_rows(min_row=2):
         for c in row:
-            c.alignment = Alignment(vertical="top", wrap_text=c.column in (4, 7, 8, 11))
+            c.alignment = Alignment(vertical="top", wrap_text=c.column in (4, 7, 8, 11, 12))
     dv = DataValidation(type="list", formula1='"○,×,保留"', allow_blank=True)
     ws.add_data_validation(dv)
     dv.add(f"A2:A{max(ws.max_row, 2)}")

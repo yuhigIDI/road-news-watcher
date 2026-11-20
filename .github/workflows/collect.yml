@@ -31,6 +31,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           VIEWER_URL: ${{ vars.VIEWER_URL }}
           MIN_SCORE: ${{ vars.MIN_SCORE || '4' }}
+          TRANSLATE: ${{ vars.TRANSLATE || 'off' }}
         run: python -m watcher
       - name: Excelを成果物として保存（30日）
         uses: actions/upload-artifact@v4

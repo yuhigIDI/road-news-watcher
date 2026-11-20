@@ -19,6 +19,15 @@ def _strip_html(s):
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
 
+def _html_to_text(s):
+    """本文用：段落の区切りを残してテキスト化"""
+    s = re.sub(r"(?i)<\s*(br|/p|/div|/li|/h[1-6])\s*/?>", "\n", s or "")
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = html.unescape(s)
+    lines = [re.sub(r"[ \t\u00a0]+", " ", ln).strip() for ln in s.split("\n")]
+    return "\n".join(ln for ln in lines if ln)
+
+
 def _published(entry):
     for key in ("published_parsed", "updated_parsed"):
         t = entry.get(key)
@@ -49,11 +58,17 @@ def parse_feed(feed, *, via, hint_country=None, lang=None, since=None, is_google
         if since and pub and pub < since:
             continue
         summary = _strip_html(e.get("summary") or e.get("description"))
+        body = ""
+        if not is_google and e.get("content"):
+            body = _html_to_text(e["content"][0].get("value", ""))
+            if len(body) < 300:  # 概要の繰り返し程度なら本文扱いしない
+                body = ""
         if is_google and summary.startswith(title):
             summary = ""  # Googleニュースの概要は見出しの繰り返しなので捨てる
         items.append({
             "title": title,
             "summary": summary[:600],
+            "body": body[:8000],
             "url": link if (link := (e.get("link") or "")).startswith(("http://", "https://")) else "",
             "source": source,
             "published": pub.isoformat() if pub else "",
@@ -121,7 +136,8 @@ def collect_all(countries_cfg, sources_cfg, *, limit_countries=None):
     if not limit_countries:
         for f in sources_cfg.get("rss_feeds") or []:
             def fetch_rss(f=f):
-                got = parse_feed(_fetch(f["url"]), via=f'RSS {f["name"]}', since=since)
+                got = parse_feed(_fetch(f["url"]), via=f'RSS {f["name"]}', since=since,
+                                 hint_country=f.get("country"))
                 for it in got:
                     it["source"] = it["source"] or f["name"]
                 return got

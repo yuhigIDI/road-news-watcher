@@ -114,10 +114,11 @@ categories:
     ja: [観光, 観光客, 観光道路, 景観, 世界遺産, リゾート, 国立公園, 来訪者]
     fr: [tourisme, touristes, touristique, patrimoine]
 
+
 # 道路・交通関連性の判定語（いずれかが含まれない記事は除外）
 core_terms:
-  en: [road, roads, roadway, highway, highways, expressway, expressways, motorway, freeway, bridge, bridges, flyover, overpass, interchange, tunnel, bypass, toll, tolls, traffic, transport, transportation, transit, mobility, vehicle, vehicles, EV, EVs, bus, buses, BRT, MRT, LRT, metro, logistics, freight, truck, trucks, corridor, pavement, "road safety", "charging station", "charging stations", cycling, bicycle, pedestrian, infrastructure, NHAI, DPWH, KeNHA, TANROADS, UNRA, LTA, ERP, FASTag]
-  ja: [道路, 高速道路, 有料道路, 国道, 橋, 架橋, トンネル, 交通, 運輸, 渋滞, 車両, バス, 物流, 輸送, 料金所, 通行, ＥＶ, EV, 充電, 自転車, 歩行者, 舗装, インフラ, 回廊, 地下鉄, モビリティ, バイク]
+  en: [road, roads, roadway, highway, highways, expressway, expressways, motorway, freeway, bridge, bridges, flyover, overpass, interchange, tunnel, bypass, toll, tolls, traffic, transport, transportation, transit, mobility, vehicle, vehicles, EV, EVs, bus, buses, BRT, logistics, freight, truck, trucks, corridor, pavement, "road safety", "charging station", "charging stations", cycling, bicycle, pedestrian, infrastructure, NHAI, DPWH, KeNHA, TANROADS, UNRA, LTA, ERP, FASTag]
+  ja: [道路, 高速道路, 有料道路, 国道, 橋, 架橋, トンネル, 交通, 運輸, 渋滞, 車両, バス, 物流, 料金所, 通行, ＥＶ, EV, 充電, 自転車, 歩行者, 舗装, インフラ, 回廊, モビリティ, バイク]
   fr: [route, routes, routier, routière, autoroute, pont, ponts, péage, trafic, transport, transports, mobilité, véhicule, bus, logistique, infrastructure, infrastructures, échangeur, chaussée]
 
 # 除外する表現（スポーツの比喩・軍事等のノイズ）
@@ -128,3 +129,5 @@ exclude_patterns:
   - "\\b(missile|airstrike|troops|militants?|terror(ist)?)\\b"
   - "\\b(box office|movie|film review|actor|actress|Bollywood)\\b"
   - "(株価|株式市況|為替相場|決算短信)"
+  # 新車発表・販売・試乗記事（EV・highway 等の語が混ざってすり抜けやすい）
+  - "\\b(dealership|test drive|priced from|price tag|sedan|hatchback|showroom|horsepower|torque|trim level|motor show|auto show|model year)\\b"

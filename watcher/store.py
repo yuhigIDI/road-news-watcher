@@ -33,6 +33,8 @@ def dedupe(items):
         cur["via"] = sorted(set(cur["via"]) | set(it["via"]))
         if "news.google.com" in cur["url"] and "news.google.com" not in it["url"]:
             cur["url"] = it["url"]
+        if not cur.get("body") and it.get("body"):
+            cur["body"] = it["body"]
         if not cur.get("summary") and it.get("summary"):
             cur["summary"] = it["summary"]
         if not cur.get("hint_country") and it.get("hint_country"):
@@ -101,3 +103,17 @@ def append_archive(archive_dir, new_items, today):
         for it in new_items:
             w.writerow(flat_row(it))
     return path
+
+
+def write_bodies(body_dir, items, keep_ids):
+    """本文全文は閲覧画面から必要なときだけ読むよう、記事ごとのファイルに分けて保存"""
+    os.makedirs(body_dir, exist_ok=True)
+    for it in items:
+        body = it.pop("body", "")
+        if body:
+            with open(os.path.join(body_dir, f'{it["id"]}.txt'), "w", encoding="utf-8") as f:
+                f.write(body)
+            it["has_body"] = True
+    for name in os.listdir(body_dir):
+        if name.endswith(".txt") and name[:-4] not in keep_ids:
+            os.remove(os.path.join(body_dir, name))

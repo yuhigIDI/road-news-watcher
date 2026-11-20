@@ -11,7 +11,8 @@ from .classify import Classifier
 from .notify import send_mail
 from .report import email_html, write_excel, write_viewer_data
 from .store import Store, append_archive, dedupe
-from .translate import translate_titles
+from .translate import translate_items
+from .resolve import resolve_google_urls
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = timezone(timedelta(hours=9))
@@ -38,7 +39,11 @@ def main():
 
     if args.fixture:
         import feedparser
-        raw = collect.parse_feed(feedparser.parse(args.fixture), via="fixture", is_google=True)
+        raw = []
+        for fx in args.fixture.split(","):
+            feed = feedparser.parse(fx)
+            is_g = "news.google.com" in open(fx, encoding="utf-8").read()
+            raw += collect.parse_feed(feed, via="fixture", is_google=is_g, hint_country=None if is_g else "VN")
         errors = []
     else:
         limit = set(args.countries.split(",")) if args.countries else None
@@ -50,14 +55,17 @@ def main():
 
     store = Store(os.path.join(ROOT, "data", "articles.json"))
     new = store.add_new(kept, today)
-    n_ja = translate_titles(new)
+    resolve_google_urls(new)
+    n_ja = translate_items(new)
     if n_ja:
         logging.info("見出し和訳 %d 件", n_ja)
     store.prune(today)
+    for it in new:  # 本文全文は保存しない（公開リポジトリに記事本文を載せないため）
+        it.pop("body", None)
     store.save()
     append_archive(os.path.join(ROOT, "data", "archive"), new, today)
     write_viewer_data(os.path.join(ROOT, "docs", "data", "articles.js"), store.recent(60, today), clf,
-                      now.strftime("%Y-%m-%d %H:%M"))
+                      now.strftime("%Y-%m-%d %H:%M"), sources)
     logging.info("新着 %d 件", len(new))
 
     xlsx = os.path.join(ROOT, "output", f"{today.replace('-', '')}_モニター記事候補.xlsx")

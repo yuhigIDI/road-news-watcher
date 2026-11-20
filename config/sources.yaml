@@ -15,36 +15,56 @@ google_news:
   fr_queries:
     - '"{country}" (route OR autoroute OR pont OR péage OR "sécurité routière" OR "transport urbain" OR bus OR infrastructures routières)'
   ja_queries:
-    - '{country} (道路 OR 高速道路 OR 橋 OR 交通 OR 渋滞 OR ＥＶ OR 物流 OR 有料道路)'
+    - '{country} (道路 OR 高速道路 OR 有料道路 OR 橋梁 OR 渋滞 OR 交通安全 OR 交通事故 OR ＥＶ充電 OR バス)'
   # 国名を含まない横断検索（日本語の専門媒体など）
   extra_queries:
-    - {q: 'site:nna.jp (道路 OR 高速道路 OR 橋 OR 交通 OR ＥＶ OR 充電 OR 物流 OR 有料道路)', hl: ja, gl: JP}
+    - {q: 'site:nna.jp (道路 OR 高速道路 OR 有料道路 OR 橋梁 OR 渋滞 OR ＥＶ充電 OR バス OR 交通安全)', hl: ja, gl: JP}
     - {q: 'site:constructionreviewonline.com (road OR highway OR bridge OR expressway)', hl: en, gl: US}
     - {q: 'site:adb.org (road OR highway OR transport)', hl: en, gl: US}
     - {q: 'site:afdb.org (road OR highway OR corridor)', hl: en, gl: US}
 
-# 媒体のRSSを直接読む（サンプル記事の出典を中心に。読めなかった媒体はログに出るだけで処理は続行）
+# 媒体のRSSを直接読む（サンプル記事の出典と旧ASEANモニターの媒体。読めなかった媒体はログに出るだけで処理は続行）
+#   country を付けた媒体は、記事中に国名がなくてもその国の記事として扱います
+#   本文全文（content:encoded）を配信している媒体は、閲覧画面の「本文」ボタンで全文を読めます
 rss_feeds:
-  - {name: VnExpress International, url: "https://e.vnexpress.net/rss/news.rss"}
-  - {name: Kathmandu Post, url: "https://kathmandupost.com/rss"}
+  - {name: Future Southeast Asia, url: "https://futuresoutheastasia.com/feed/"}
+  - {name: Bangkok Post, url: "https://www.bangkokpost.com/rss/data/topstories.xml", country: TH}
+  - {name: Bangkok Post Business, url: "https://www.bangkokpost.com/rss/data/business.xml", country: TH}
+  - {name: VnExpress Business, url: "https://e.vnexpress.net/rss/business.rss", country: VN}
+  - {name: Vietnam News, url: "https://vietnamnews.vn/rss/society.rss", country: VN}
+  - {name: VietnamPlus, url: "https://en.vietnamplus.vn/rss/home.rss", country: VN}
+  - {name: The Straits Times, url: "https://www.straitstimes.com/rss.xml", country: SG}
+  - {name: GMA News Economy, url: "https://data.gmanetwork.com/gno/rss/money/economy/feed.xml", country: PH}
+  - {name: Manila Times Business, url: "https://www.manilatimes.net/business/feed/", country: PH}
+  - {name: Manila Times Regions, url: "https://www.manilatimes.net/regions/feed/", country: PH}
+  - {name: ANTARA News, url: "https://en.antaranews.com/rss/news.xml", country: ID}
+  - {name: ANTARA Business, url: "https://en.antaranews.com/rss/business-investment.xml", country: ID}
+  - {name: Malay Mail Malaysia, url: "https://www.malaymail.com/feed/rss/malaysia", country: MY}
+  - {name: Malay Mail Money, url: "https://www.malaymail.com/feed/rss/money", country: MY}
+  - {name: BusinessWorld, url: "https://www.bworldonline.com/feed/", country: PH}
+  - {name: ADB News, url: "http://feeds.feedburner.com/adb_news"}
+  - {name: ADB Approved Projects, url: "http://feeds.feedburner.com/approved-projects"}
+  - {name: Traffic Technology Today, url: "https://www.traffictechnologytoday.com/feed"}
+  - {name: VnExpress International, url: "https://e.vnexpress.net/rss/news.rss", country: VN}
+  - {name: Kathmandu Post, url: "https://kathmandupost.com/rss", country: NP}
   - {name: Construction Review Online, url: "https://constructionreviewonline.com/feed/"}
-  - {name: Turkish Minute, url: "https://www.turkishminute.com/feed/"}
-  - {name: Manila Times, url: "https://www.manilatimes.net/news/feed/"}
-  - {name: The Business Standard (BD), url: "https://www.tbsnews.net/top-news/rss.xml"}
-  - {name: AllAfrica Kenya, url: "https://allafrica.com/tools/headlines/rdf/kenya/headlines.rdf"}
-  - {name: AllAfrica Tanzania, url: "https://allafrica.com/tools/headlines/rdf/tanzania/headlines.rdf"}
-  - {name: AllAfrica Nigeria, url: "https://allafrica.com/tools/headlines/rdf/nigeria/headlines.rdf"}
-  - {name: AllAfrica Ghana, url: "https://allafrica.com/tools/headlines/rdf/ghana/headlines.rdf"}
-  - {name: AllAfrica Uganda, url: "https://allafrica.com/tools/headlines/rdf/uganda/headlines.rdf"}
-  - {name: AllAfrica Ethiopia, url: "https://allafrica.com/tools/headlines/rdf/ethiopia/headlines.rdf"}
-  - {name: AllAfrica Zambia, url: "https://allafrica.com/tools/headlines/rdf/zambia/headlines.rdf"}
-  - {name: AllAfrica Mozambique, url: "https://allafrica.com/tools/headlines/rdf/mozambique/headlines.rdf"}
-  - {name: AllAfrica Cameroon, url: "https://allafrica.com/tools/headlines/rdf/cameroon/headlines.rdf"}
-  - {name: AllAfrica Senegal, url: "https://allafrica.com/tools/headlines/rdf/senegal/headlines.rdf"}
-  - {name: AllAfrica Cote d'Ivoire, url: "https://allafrica.com/tools/headlines/rdf/cotedivoire/headlines.rdf"}
-  - {name: AllAfrica Madagascar, url: "https://allafrica.com/tools/headlines/rdf/madagascar/headlines.rdf"}
-  - {name: AllAfrica Morocco, url: "https://allafrica.com/tools/headlines/rdf/morocco/headlines.rdf"}
-  - {name: AllAfrica Tunisia, url: "https://allafrica.com/tools/headlines/rdf/tunisia/headlines.rdf"}
+  - {name: Turkish Minute, url: "https://www.turkishminute.com/feed/", country: TR}
+  - {name: Manila Times, url: "https://www.manilatimes.net/news/feed/", country: PH}
+  - {name: The Business Standard (BD), url: "https://www.tbsnews.net/top-news/rss.xml", country: BD}
+  - {name: AllAfrica Kenya, url: "https://allafrica.com/tools/headlines/rdf/kenya/headlines.rdf", country: KE}
+  - {name: AllAfrica Tanzania, url: "https://allafrica.com/tools/headlines/rdf/tanzania/headlines.rdf", country: TZ}
+  - {name: AllAfrica Nigeria, url: "https://allafrica.com/tools/headlines/rdf/nigeria/headlines.rdf", country: NG}
+  - {name: AllAfrica Ghana, url: "https://allafrica.com/tools/headlines/rdf/ghana/headlines.rdf", country: GH}
+  - {name: AllAfrica Uganda, url: "https://allafrica.com/tools/headlines/rdf/uganda/headlines.rdf", country: UG}
+  - {name: AllAfrica Ethiopia, url: "https://allafrica.com/tools/headlines/rdf/ethiopia/headlines.rdf", country: ET}
+  - {name: AllAfrica Zambia, url: "https://allafrica.com/tools/headlines/rdf/zambia/headlines.rdf", country: ZM}
+  - {name: AllAfrica Mozambique, url: "https://allafrica.com/tools/headlines/rdf/mozambique/headlines.rdf", country: MZ}
+  - {name: AllAfrica Cameroon, url: "https://allafrica.com/tools/headlines/rdf/cameroon/headlines.rdf", country: CM}
+  - {name: AllAfrica Senegal, url: "https://allafrica.com/tools/headlines/rdf/senegal/headlines.rdf", country: SN}
+  - {name: AllAfrica Cote d'Ivoire, url: "https://allafrica.com/tools/headlines/rdf/cotedivoire/headlines.rdf", country: CI}
+  - {name: AllAfrica Madagascar, url: "https://allafrica.com/tools/headlines/rdf/madagascar/headlines.rdf", country: MG}
+  - {name: AllAfrica Morocco, url: "https://allafrica.com/tools/headlines/rdf/morocco/headlines.rdf", country: MA}
+  - {name: AllAfrica Tunisia, url: "https://allafrica.com/tools/headlines/rdf/tunisia/headlines.rdf", country: TN}
 
 # 優先媒体（関連度スコアを加点）— サンプル記事で使われている媒体
 priority_sources:
@@ -78,3 +98,9 @@ priority_sources:
   - Daily Nation
   - The Citizen
   - Daily News
+  - ANTARA
+  - Malay Mail
+  - BusinessWorld
+  - VietnamPlus
+  - GMA News
+  - Future Southeast Asia
