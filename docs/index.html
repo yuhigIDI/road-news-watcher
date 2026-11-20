@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>モニター記事 候補一覧</title>
+<style>
+  :root{--ink:#1d2430;--sub:#5d6675;--line:#dfe3ea;--bg:#f6f7f9;--card:#fff;--accent:#1F4E79;--pick:#fff6d6}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;color:var(--ink);background:var(--bg);font-size:14px}
+  header{background:var(--accent);color:#fff;padding:14px 20px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+  header h1{font-size:18px;margin:0}
+  header .meta{opacity:.85;font-size:12px}
+  .wrap{display:grid;grid-template-columns:290px 1fr;gap:16px;padding:16px 20px;align-items:start}
+  aside{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}
+  aside h3{font-size:12px;color:var(--sub);margin:14px 0 6px;font-weight:600}
+  aside h3:first-child{margin-top:0}
+  input[type=search],input[type=date],select{width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:6px;font:inherit}
+  .row{display:flex;gap:6px;align-items:center}
+  .row input[type=date]{min-width:0;flex:1}
+  .chips{display:flex;flex-wrap:wrap;gap:4px}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:14px;padding:2px 9px;font-size:12px;cursor:pointer;user-select:none}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .chip .n{opacity:.6;margin-left:3px;font-size:11px}
+  .region{font-size:11px;color:var(--sub);margin:8px 0 3px;cursor:pointer}
+  .region:hover{text-decoration:underline}
+  .btn{border:1px solid var(--accent);background:#fff;color:var(--accent);border-radius:6px;padding:6px 10px;font:inherit;font-size:13px;cursor:pointer}
+  .btn.primary{background:var(--accent);color:#fff}
+  .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+  .bar .count{color:var(--sub);margin-right:auto}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px;display:grid;grid-template-columns:24px 1fr;gap:8px}
+  .card.picked{background:var(--pick);border-color:#e7c75a}
+  .card input{margin-top:3px;width:16px;height:16px}
+  .t{font-weight:600;line-height:1.45}
+  .t a{color:var(--ink);text-decoration:none}
+  .t a:hover{color:var(--accent);text-decoration:underline}
+  .ja{color:#2f3a4a;margin-top:2px;line-height:1.45}
+  .su{color:var(--sub);font-size:12px;margin-top:4px;line-height:1.5}
+  .info{font-size:12px;color:var(--sub);margin-top:5px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .tag{background:#eef2f7;border-radius:4px;padding:1px 6px;font-size:11px;color:#34465e}
+  .tag.c{background:#e3edf8;font-weight:600}
+  .sc{font-variant-numeric:tabular-nums}
+  .empty{padding:40px;text-align:center;color:var(--sub)}
+  @media (max-width:820px){.wrap{grid-template-columns:1fr}aside{position:static;max-height:none}}
+</style>
+</head>
+<body>
+<header><h1>道路・交通 モニター記事 候補一覧</h1><span class="meta" id="gen"></span></header>
+<div class="wrap">
+  <aside>
+    <h3>キーワード検索</h3>
+    <input type="search" id="q" placeholder="見出し・媒体・概要">
+    <h3>収集日</h3>
+    <div class="row"><input type="date" id="from"><span>〜</span><input type="date" id="to"></div>
+    <div class="row" style="margin-top:6px;gap:4px">
+      <button class="btn" data-days="1">今日</button><button class="btn" data-days="7">7日</button>
+      <button class="btn" data-days="15">15日</button><button class="btn" data-days="60">全期間</button>
+    </div>
+    <h3>関連度（下限）<span id="scv"></span></h3>
+    <input type="range" id="sc" min="0" max="15" value="6" style="width:100%">
+    <h3>国（地域名クリックで一括）</h3>
+    <div id="countries"></div>
+    <h3>分類</h3>
+    <div class="chips" id="cats"></div>
+    <h3>表示</h3>
+    <label class="row"><input type="checkbox" id="onlyPicked"> 選定した記事のみ</label>
+    <label class="row"><input type="checkbox" id="showSum" checked> 概要を表示</label>
+    <div style="margin-top:12px"><button class="btn" id="reset">条件をクリア</button></div>
+  </aside>
+  <main>
+    <div class="bar">
+      <span class="count" id="count"></span>
+      <select id="sort" style="width:auto"><option value="date">新しい順</option><option value="score">関連度順</option><option value="country">国順</option></select>
+      <button class="btn" id="pickAll">表示中をすべて選定</button>
+      <button class="btn" id="clearPick">選定を解除</button>
+      <button class="btn primary" id="export">選定記事をCSV出力</button>
+    </div>
+    <div id="list"></div>
+  </main>
+</div>
+<script src="data/articles.js"></script>
+<script>
+(function(){
+  const A = window.ARTICLES || [], M = window.META || {regions:{},categories:[]};
+  const $ = id => document.getElementById(id);
+  const store = {
+    get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+    set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  };
+  const nameOf = {}, regionOf = {}, order = {};
+  let i = 0;
+  for (const [r, list] of Object.entries(M.regions)) for (const c of list){ nameOf[c.code]=c.name; regionOf[c.code]=r; order[c.code]=i++; }
+  const picked = new Set(store.get('rnw_picked', []));
+  const st = { countries:new Set(), cats:new Set() };
+
+  $('gen').textContent = M.generated ? `最終更新 ${M.generated}（直近60日分・${A.length}件）` : 'データがありません';
+
+  // 国・分類のチップ
+  const cCount = {}, kCount = {};
+  A.forEach(a => { a.co.forEach(c => cCount[c]=(cCount[c]||0)+1); a.ca.forEach(k => kCount[k]=(kCount[k]||0)+1); });
+  const cBox = $('countries');
+  for (const [r, list] of Object.entries(M.regions)){
+    const h = document.createElement('div'); h.className='region'; h.textContent = r + ' ▸';
+    h.onclick = () => { const all = list.every(c => st.countries.has(c.code)); list.forEach(c => all ? st.countries.delete(c.code) : st.countries.add(c.code)); syncChips(); render(); };
+    cBox.appendChild(h);
+    const box = document.createElement('div'); box.className='chips';
+    list.forEach(c => box.appendChild(chip(c.name, cCount[c.code]||0, 'c:'+c.code, () => toggle(st.countries, c.code))));
+    cBox.appendChild(box);
+  }
+  M.categories.forEach(k => $('cats').appendChild(chip(k, kCount[k]||0, 'k:'+k, () => toggle(st.cats, k))));
+  function chip(label, n, key, fn){ const s=document.createElement('span'); s.className='chip'; s.dataset.key=key; s.innerHTML=`${esc(label)}<span class="n">${n}</span>`; s.onclick=()=>{fn(); syncChips(); render();}; return s; }
+  function toggle(set, v){ set.has(v) ? set.delete(v) : set.add(v); }
+  function syncChips(){ document.querySelectorAll('.chip').forEach(s => { const [t,v]=[s.dataset.key.slice(0,1), s.dataset.key.slice(2)]; s.classList.toggle('on', t==='c' ? st.countries.has(v) : st.cats.has(v)); }); }
+
+  // 期間
+  const dates = A.map(a => a.c).sort();
+  const maxD = dates[dates.length-1] || '', minD = dates[0] || '';
+  function setDays(n){ if(!maxD) return; const d = new Date(maxD); d.setDate(d.getDate()-(n-1)); const f = d.toISOString().slice(0,10); $('from').value = f < minD ? minD : f; $('to').value = maxD; render(); }
+  document.querySelectorAll('[data-days]').forEach(b => b.onclick = () => setDays(+b.dataset.days));
+  ['q','from','to','sc','sort','onlyPicked','showSum'].forEach(id => $(id).addEventListener('input', render));
+  $('reset').onclick = () => { st.countries.clear(); st.cats.clear(); $('q').value=''; $('sc').value=6; $('onlyPicked').checked=false; syncChips(); setDays(7); };
+
+  function filtered(){
+    const q = $('q').value.trim().toLowerCase(), f=$('from').value, t=$('to').value, sc=+$('sc').value, only=$('onlyPicked').checked;
+    let r = A.filter(a =>
+      (!f || a.c >= f) && (!t || a.c <= t) && a.sc >= sc &&
+      (!st.countries.size || a.co.some(c => st.countries.has(c))) &&
+      (!st.cats.size || a.ca.some(k => st.cats.has(k))) &&
+      (!only || picked.has(a.id)) &&
+      (!q || (a.t+' '+a.j+' '+a.s+' '+a.su).toLowerCase().includes(q)));
+    const s = $('sort').value;
+    r.sort(s==='score' ? (x,y)=>y.sc-x.sc || y.c.localeCompare(x.c)
+         : s==='country' ? (x,y)=>(order[x.co[0]]??999)-(order[y.co[0]]??999) || y.sc-x.sc
+         : (x,y)=>y.c.localeCompare(x.c) || (y.p||'').localeCompare(x.p||'') || y.sc-x.sc);
+    return r;
+  }
+
+  function render(){
+    $('scv').textContent = '：' + $('sc').value + ' 以上';
+    const r = filtered(), showSum = $('showSum').checked;
+    $('count').textContent = `${r.length} 件表示 ／ 選定 ${picked.size} 件`;
+    const L = $('list');
+    if (!r.length){ L.innerHTML = '<div class="empty">条件に合う記事がありません</div>'; return; }
+    L.innerHTML = r.slice(0, 800).map(a => `
+      <div class="card ${picked.has(a.id)?'picked':''}" data-id="${a.id}">
+        <input type="checkbox" ${picked.has(a.id)?'checked':''} title="様式化する記事として選定">
+        <div>
+          <div class="t"><a href="${esc(a.u)}" target="_blank" rel="noopener">${esc(a.t)}</a></div>
+          ${a.j ? `<div class="ja">${esc(a.j)}</div>` : ''}
+          ${showSum && a.su ? `<div class="su">${esc(a.su)}</div>` : ''}
+          <div class="info">
+            ${a.co.map(c => `<span class="tag c">${esc(nameOf[c]||c)}</span>`).join('')}
+            ${a.ca.slice(0,6).map(k => `<span class="tag">${esc(k)}</span>`).join('')}
+            <span>${esc(a.s)}</span><span>公開 ${esc(a.p||'—')}</span><span>収集 ${esc(a.c)}</span><span class="sc">関連度 ${a.sc}</span>
+          </div>
+        </div>
+      </div>`).join('') + (r.length > 800 ? '<div class="empty">先頭800件を表示しています。条件で絞り込んでください</div>' : '');
+  }
+  $('list').addEventListener('change', e => {
+    const card = e.target.closest('.card'); if (!card) return;
+    e.target.checked ? picked.add(card.dataset.id) : picked.delete(card.dataset.id);
+    card.classList.toggle('picked', e.target.checked); store.set('rnw_picked', [...picked]);
+    $('count').textContent = `${filtered().length} 件表示 ／ 選定 ${picked.size} 件`;
+  });
+  $('pickAll').onclick = () => { filtered().forEach(a => picked.add(a.id)); store.set('rnw_picked', [...picked]); render(); };
+  $('clearPick').onclick = () => { if (!picked.size) return; picked.clear(); store.set('rnw_picked', []); render(); };
+  $('export').onclick = () => {
+    const rows = A.filter(a => picked.has(a.id)).sort((x,y)=>(order[x.co[0]]??999)-(order[y.co[0]]??999));
+    if (!rows.length){ $('count').textContent = '先に記事を選定してください'; return; }
+    const head = ['地域','国','分類','公開日','収集日','見出し（原文）','見出し（和訳）','媒体','URL'];
+    const lines = [head].concat(rows.map(a => [regionOf[a.co[0]]||'', a.co.map(c=>nameOf[c]||c).join(' / '), a.ca.join(' / '), a.p, a.c, a.t, a.j, a.s, a.u]));
+    const csv = '﻿' + lines.map(r => r.map(v => '"' + String(v??'').replace(/"/g,'""') + '"').join(',')).join('\r\n');
+    const url = URL.createObjectURL(new Blob([csv], {type:'text/csv'}));
+    const el = document.createElement('a'); el.href = url; el.download = `モニター記事_選定_${new Date().toISOString().slice(0,10)}.csv`; el.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  function esc(s){ return String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  syncChips(); setDays(7);
+})();
+</script>
+</body>
+</html>

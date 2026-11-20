@@ -1,0 +1,130 @@
+# 分類キーワード（モニター記事の分類26項目）
+#   en / ja / fr : 記事の見出し・概要にこの語が含まれれば、その分類を付ける
+#   英字・仏字は単語単位で一致（複数形 s/es も一致）。全て大文字の略語（EV, PPP, ITS など）は大文字小文字を区別
+#   日本語は部分一致
+#   語を追加・削除するだけで分類精度を調整できます
+
+categories:
+  - name: 投資・予算
+    en: [budget, allocation, investment, invest, funding, financing, loan, grant, million, billion, trillion, crore, "capital expenditure", capex, appropriation, bond, ODA, ADB, World Bank, AfDB, JICA, AIIB, Islamic Development Bank]
+    ja: [予算, 投資, 融資, 借款, 円借款, 資金, 財源, 債券, 億ドル, 兆ドン, 億円]
+    fr: [budget, financement, investissement, prêt, milliards, BAD, Banque mondiale]
+  - name: 税制
+    en: [tax, VAT, levy, excise, duty, "fuel tax", "road tax", "vehicle tax", "tax incentive"]
+    ja: [税, 課税, 付加価値税, 免税, 減税, 関税]
+    fr: [taxe, TVA, impôt, fiscal]
+  - name: インフラ整備
+    en: [construction, upgrade, upgrading, rehabilitation, widening, groundbreaking, "ground-breaking", inaugurate, inauguration, completed, completion, "opened to traffic", contract awarded, tender, EPC, bridge, flyover, overpass, interchange, tunnel, bypass, "ring road"]
+    ja: [建設, 整備, 着工, 開通, 完工, 竣工, 拡幅, 改良, 入札, 落札, 橋, 架橋, トンネル, 環状道路, バイパス]
+    fr: [construction, travaux, réhabilitation, élargissement, inauguration, pont, échangeur, contournement, appel d'offres]
+  - name: インフラ計画
+    en: [master plan, masterplan, "national plan", roadmap, pipeline, "feasibility study", feasibility, "investment policy", approved, approval, proposal, proposed, planning, "development plan", "five-year plan", strategy, corridor]
+    ja: [計画, 構想, 承認, 基本計画, マスタープラン, 事業化調査, ＦＳ, 投資方針, 戦略, 回廊]
+    fr: [plan directeur, schéma, étude de faisabilité, projet, programme, stratégie, corridor]
+  - name: 高速道路
+    en: [expressway, motorway, freeway, autobahn, "access-controlled", "access controlled", "high-speed corridor", "national highway", "toll road", tollway, "toll expressway"]
+    ja: [高速道路, 有料道路, 自動車専用道路, 国道]
+    fr: [autoroute, autoroutes, voie express, route nationale]
+  - name: 維持管理
+    en: [maintenance, repair, repairs, pothole, potholes, resurfacing, "asset management", deterioration, ageing, aging, inspection, "bridge inspection", collapse, collapsed, retrofit, retrofitting, "structural health", overloading, axle load, weighbridge]
+    ja: [維持管理, 補修, 修繕, 老朽化, 点検, 長寿命化, アセットマネジメント, 舗装, 陥没, 崩落, 過積載]
+    fr: [entretien, maintenance, réparation, nids-de-poule, effondrement, dégradation]
+  - name: 道路行政改革
+    en: [reform, restructuring, "road authority", "road agency", "road fund", "new law", amendment, regulation, regulations, decree, "highway act", "road act", privatization, privatisation, corporatisation, "institutional", governance]
+    ja: [改革, 組織改編, 法改正, 改正案, 法律, 政令, 規則, 民営化, 道路公団, 道路基金]
+    fr: [réforme, décret, loi, réglementation, privatisation, fonds routier]
+  - name: 災害・防災対策
+    en: [flood, floods, flooding, "flood control", landslide, landslides, earthquake, typhoon, cyclone, disaster, resilience, resilient, "climate adaptation", washout, "washed away", blockage, "road blocked", erosion]
+    ja: [災害, 防災, 洪水, 土砂崩れ, 地すべり, 地震, 台風, 豪雨, 冠水, 強靱, 強靭, 復旧]
+    fr: [inondation, inondations, glissement de terrain, catastrophe, résilience, séisme]
+  - name: 海外企業
+    en: [Chinese firm, Chinese company, Chinese consortium, CCCC, CRBC, China Railway, "Power China", PowerChina, Japanese firm, Japanese company, Korean firm, Turkish contractor, "foreign investor", "foreign investors", "foreign firm", "foreign company", consortium, "joint venture", Obayashi, Sumitomo, Mitsubishi, Marubeni, Itochu, Kajima, Taisei, Shimizu, Hitachi, Toyota, JFE, IHI, Mitsui, NEC, Fujitsu, Hyundai, Samsung C&T, Larsen, L&T, Vinci, Bouygues, Colas, Eiffage, Limak, Kalyon, Cengiz]
+    ja: [日系, 日本企業, 中国企業, 韓国企業, 外資, 受注, 合弁, 共同企業体, ＪＶ, 株式取得, 大林組, 鹿島, 大成, 清水建設, 住友, 三菱, 三井, 丸紅, 伊藤忠, ＪＦＥ, ＩＨＩ, 日立, 太平洋セメント]
+    fr: [entreprise chinoise, groupement, consortium, attributaire, contrat, coentreprise]
+  - name: 脱炭素
+    en: [decarbonisation, decarbonization, "carbon neutral", "carbon neutrality", "net zero", net-zero, emission, emissions, "electric vehicle", "electric vehicles", EV, EVs, "e-bus", "electric bus", "charging station", "charging stations", charger, chargers, "charging infrastructure", hydrogen, "green transport", biofuel, ethanol, CNG, LNG truck, "low emission", "low-emission", "green bond", GHG, CO2]
+    ja: [脱炭素, カーボンニュートラル, 排出, 電気自動車, ＥＶ, EV, 充電, 水素, バイオ燃料, エタノール, 温室効果ガス, ＧＸ, 低排出]
+    fr: [décarbonation, neutralité carbone, véhicule électrique, véhicules électriques, borne de recharge, émissions, hydrogène]
+  - name: 環境
+    en: ["air pollution", "air quality", PM2.5, smog, noise, "tree planting", greening, "green belt", "environmental impact", EIA, "environmental clearance", wildlife, "wildlife crossing", biodiversity, plastic road, "recycled", recycling]
+    ja: [大気汚染, 大気質, 騒音, 緑化, 植樹, 環境影響評価, 環境アセス, 野生生物, 生物多様性, 再利用, リサイクル]
+    fr: [pollution, qualité de l'air, environnement, reboisement, biodiversité]
+  - name: ネイチャーポジティブ
+    en: ["nature positive", "nature-positive", "nature-based solution", "nature-based solutions", NbS, "ecosystem restoration", "wildlife corridor", "animal crossing", "ecological corridor", "green infrastructure", mangrove]
+    ja: [ネイチャーポジティブ, 自然再興, 生態系, 自然を基盤とした解決策, 動物の横断, マングローブ]
+    fr: [solutions fondées sur la nature, corridor écologique, écosystème]
+  - name: 課金
+    en: [toll, tolls, tolling, "toll fee", "toll rate", "toll plaza", "toll collection", "electronic toll", ETC, FASTag, "free flow", "free-flow", MLFF, ANPR toll, "congestion charge", "congestion pricing", ERP, "road pricing", "road user charge", "user fee", "distance-based"]
+    ja: [料金, 通行料, 課金, 料金所, 有料, ノンストップ, ロードプライシング, 混雑課金, ＥＲＰ, 無料化]
+    fr: [péage, péages, redevance, tarif]
+  - name: 都市交通
+    en: [metro, MRT, LRT, BRT, "bus rapid transit", bus, buses, "public transport", "public transit", "urban transport", "urban mobility", congestion, "traffic jam", "traffic congestion", commuters, "park and ride", TOD, "transit-oriented", "low emission zone", "low-emission zone", LEZ, "ride-hailing", "motorbike ban", "motorcycle ban"]
+    ja: [都市交通, 公共交通, 地下鉄, バス, 渋滞, 通勤, 低排出ゾーン, ＬＥＺ, バイク規制, ガソリンバイク, 乗り入れ規制, 通行制限]
+    fr: [transport urbain, transports publics, métro, bus, embouteillages, congestion, mobilité urbaine]
+  - name: 非都市部の交通
+    en: [rural road, rural roads, "rural access", "rural connectivity", "feeder road", "feeder roads", "farm-to-market", "farm to market", village road, "last mile", "remote areas", PMGSY, "district road", "unpaved", gravel road, "rural transport"]
+    ja: [農村道路, 地方道路, 農道, 生活道路, 地方部, 山間部, 離島]
+    fr: [route rurale, routes rurales, pistes rurales, désenclavement, zones rurales]
+  - name: 物流
+    en: [logistics, freight, cargo, trucking, truck, trucks, lorry, "dry port", "inland port", "economic corridor", "trade corridor", "border crossing", "cross-border", "one-stop border", port, "supply chain", warehouse, "multimodal logistics"]
+    ja: [物流, 貨物, トラック, 輸送, 港湾, ドライポート, 国境, 越境, サプライチェーン, 回廊]
+    fr: [logistique, fret, camions, port sec, transfrontalier, corridor]
+  - name: 技術
+    en: [ITS, "intelligent transport", "smart traffic", "traffic management system", digital, digitalisation, digitalization, AI, "artificial intelligence", camera, cameras, CCTV, sensor, sensors, drone, drones, BIM, "digital twin", GIS, "new technology", innovation, "precast", "3D printing", satellite, IoT, "big data", "smart city"]
+    ja: [ＩＴＳ, ITS, 技術, デジタル, ＡＩ, AI, 人工知能, カメラ, センサー, ドローン, ＢＩＭ, デジタルツイン, スマート, 実証, 新技術, ＤＸ]
+    fr: [technologie, numérique, intelligence artificielle, caméras, capteurs, drones, innovation]
+  - name: 自動運転
+    en: [autonomous, "self-driving", driverless, robotaxi, "robo-taxi", "automated driving", "autonomous vehicle", "autonomous vehicles", "connected vehicle", V2X, "autonomous bus"]
+    ja: [自動運転, 無人運転, ロボタクシー, コネクテッド]
+    fr: [véhicule autonome, véhicules autonomes, conduite autonome, sans chauffeur]
+  - name: 交通安全
+    en: ["road safety", "traffic safety", "highway safety", safety, safer, accident, accidents, crash, crashes, fatalities, "road deaths", "black spot", blackspot, "speed limit", speeding, "speed camera", helmet, "drunk driving", "drink driving", "seat belt", "traffic police", "traffic violation", "traffic violations", "traffic fines", "driving licence", "driving license", "rest area", "rest stop", "median cut"]
+    ja: [交通安全, 安全, 事故, 死亡事故, 速度制限, 速度違反, ヘルメット, 飲酒運転, 交通違反, 罰金, 運転免許, 休憩施設, 路側ステーション]
+    fr: [sécurité routière, accident, accidents, excès de vitesse, radar, permis de conduire, casque]
+  - name: 道路空間再編
+    en: [pedestrian, pedestrians, pedestrianisation, pedestrianization, "walking street", sidewalk, footpath, "complete streets", "road diet", "street redesign", "public space", "car-free", "car free", "shared space", "parking", "on-street parking", "road space"]
+    ja: [歩行者, 歩道, 歩行者天国, 道路空間, 再配分, 駐車, 路上駐車, カーフリー, 歩行者専用]
+    fr: [piétons, piétonnisation, trottoir, espace public, stationnement]
+  - name: 自転車
+    en: [bicycle, bicycles, bike lane, "bike lanes", cycling, cyclist, cyclists, "cycle track", "cycle lane", "bike sharing", "bike-sharing", "non-motorised", "non-motorized", NMT]
+    ja: [自転車, サイクリング, 自転車道, シェアサイクル, 非動力]
+    fr: [vélo, vélos, piste cyclable, cyclistes]
+  - name: 新モビリティ
+    en: [e-scooter, "e-scooters", "electric scooter", "electric motorcycle", "electric motorbike", "e-motorcycle", "e-bike", "e-bikes", micromobility, "micro-mobility", MaaS, "mobility as a service", "ride-hailing", Grab, Gojek, "battery swapping", "battery swap", "e-tricycle", "e-jeepney", "three-wheeler", tuk-tuk, "flying car", eVTOL, "air taxi"]
+    ja: [新モビリティ, マイクロモビリティ, 電動キックボード, 電動バイク, ＭａａＳ, MaaS, 配車, ライドシェア, バッテリー交換, 空飛ぶクルマ]
+    fr: [trottinette, micromobilité, moto électrique, VTC, taxi-moto]
+  - name: 公平性（エクイティ）
+    en: [equity, inclusive, inclusion, "universal access", accessibility, accessible, disabled, disability, "persons with disabilities", wheelchair, gender, women, elderly, "low-income", "affordable", affordability, "fare-free", "free bus", "free rides", "free fare"]
+    ja: [公平, 包摂, インクルーシブ, バリアフリー, 障害者, 高齢者, 女性, 低所得, 無料バス, 無料乗車, 運賃無料]
+    fr: [inclusion, accessibilité, handicap, femmes, gratuité]
+  - name: モーダルコネクト
+    en: [multimodal, intermodal, "modal shift", interchange hub, "transport hub", "transit hub", "bus terminal", "integrated transport", "first and last mile", "first-mile", "feeder bus", "airport link", "rail link", "station access", "seamless"]
+    ja: [モーダル, 結節点, 交通結節, ターミナル, 乗り継ぎ, 乗換, フィーダー, 複合一貫, シームレス]
+    fr: [multimodal, intermodal, pôle d'échanges, gare routière]
+  - name: PPP
+    en: [PPP, "public-private partnership", "public private partnership", concession, concessionaire, BOT, "build-operate-transfer", "build, operate", BOOT, "availability payment", "private sector participation", "private sector", "asset recycling", InvIT, TOT, "toll-operate-transfer", "hybrid annuity", HAM, "viability gap"]
+    ja: [ＰＰＰ, PPP, 官民連携, 官民パートナーシップ, コンセッション, ＢＯＴ, 民間参画, 運営権, 民間資金]
+    fr: [PPP, partenariat public-privé, concession, concessionnaire]
+  - name: 不正交通対策
+    en: [overloading, overloaded, "axle load", "toll evasion", "toll evaders", "fake number plate", "number plate", "illegal parking", "traffic violation", "traffic violations", "traffic offenders", "red light", "unlicensed", "illegal", crackdown, enforcement, "e-challan", "automatic enforcement", "fines"]
+    ja: [不正, 違反, 取り締まり, 摘発, 過積載, 違法, 無免許, ナンバープレート, 料金逃れ, 罰則]
+    fr: [surcharge, infraction, infractions, contrôle, amendes, fraude]
+  - name: 観光
+    en: [tourism, tourist, tourists, tourism road, "scenic route", "scenic road", visitor, visitors, "heritage", resort, "tourist destination", "tourism corridor", "national park", APEC, "World Cup", Expo, festival]
+    ja: [観光, 観光客, 観光道路, 景観, 世界遺産, リゾート, 国立公園, 来訪者]
+    fr: [tourisme, touristes, touristique, patrimoine]
+
+# 道路・交通関連性の判定語（いずれかが含まれない記事は除外）
+core_terms:
+  en: [road, roads, roadway, highway, highways, expressway, expressways, motorway, freeway, bridge, bridges, flyover, overpass, interchange, tunnel, bypass, toll, tolls, traffic, transport, transportation, transit, mobility, vehicle, vehicles, EV, EVs, bus, buses, BRT, MRT, LRT, metro, logistics, freight, truck, trucks, corridor, pavement, "road safety", "charging station", "charging stations", cycling, bicycle, pedestrian, infrastructure, NHAI, DPWH, KeNHA, TANROADS, UNRA, LTA, ERP, FASTag]
+  ja: [道路, 高速道路, 有料道路, 国道, 橋, 架橋, トンネル, 交通, 運輸, 渋滞, 車両, バス, 物流, 輸送, 料金所, 通行, ＥＶ, EV, 充電, 自転車, 歩行者, 舗装, インフラ, 回廊, 地下鉄, モビリティ, バイク]
+  fr: [route, routes, routier, routière, autoroute, pont, ponts, péage, trafic, transport, transports, mobilité, véhicule, bus, logistique, infrastructure, infrastructures, échangeur, chaussée]
+
+# 除外する表現（スポーツの比喩・軍事等のノイズ）
+exclude_patterns:
+  - "road to (the )?(final|finals|world cup|olympics|recovery|victory|glory|title|playoffs?)"
+  - "\\b(cricket|football|soccer|rugby|tennis|batsman|wicket|goalkeeper|striker|IPL|Premier League)\\b"
+  - "\\b(bridge the gap|bridging the gap|on the road to)\\b"
+  - "\\b(missile|airstrike|troops|militants?|terror(ist)?)\\b"
+  - "\\b(box office|movie|film review|actor|actress|Bollywood)\\b"
+  - "(株価|株式市況|為替相場|決算短信)"

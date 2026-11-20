@@ -1,0 +1,49 @@
+# 対象国の定義
+#   name_en   : Googleニュース英語検索で使う国名
+#   name_fr   : 仏語検索も行う国だけ記入（仏語圏アフリカ等）
+#   name_ja   : 日本語検索・表示用
+#   aliases   : 記事本文から国を判定するための語（国名の別表記、首都・主要都市、道路機関の略称など）
+#               英字は単語境界で照合、日本語はそのまま部分一致
+#   gn        : Googleニュースの地域版（hl:gl）。現地媒体が拾いやすくなる。未指定は en-US:US
+
+regions:
+  ASEAN:
+    - {code: ID, name_ja: インドネシア, name_en: Indonesia, gn: "en:ID",
+       aliases: [Indonesian, Jakarta, Surabaya, Bandung, Medan, Nusantara, Jasa Marga, Bina Marga, BPJT, Danantara, ジャカルタ, スラバヤ, ヌサンタラ]}
+    - {code: KH, name_ja: カンボジア, name_en: Cambodia, aliases: [Cambodian, Phnom Penh, Siem Reap, Sihanoukville, プノンペン, シェムリアップ]}
+    - {code: SG, name_ja: シンガポール, name_en: Singapore, gn: "en:SG", aliases: [Singaporean, LTA, Land Transport Authority, ERP 2.0, 陸上交通庁]}
+    - {code: TH, name_ja: タイ, name_en: Thailand, aliases: [Thai, Bangkok, Chiang Mai, Pattaya, Department of Highways, EXAT, バンコク, チェンマイ]}
+    - {code: TL, name_ja: 東ティモール, name_en: Timor-Leste, aliases: [East Timor, Dili, Timorese, ディリ]}
+    - {code: PH, name_ja: フィリピン, name_en: Philippines, gn: "en:PH",
+       aliases: [Philippine, Filipino, Manila, Cebu, Davao, Luzon, Visayas, Mindanao, DPWH, DOTr, NLEX, SLEX, マニラ, セブ, ダバオ, ルソン, ミンダナオ]}
+    - {code: BN, name_ja: ブルネイ, name_en: Brunei, aliases: [Bandar Seri Begawan, バンダルスリブガワン]}
+    - {code: VN, name_ja: ベトナム, name_en: Vietnam, aliases: [Viet Nam, Vietnamese, Hanoi, Ha Noi, Ho Chi Minh City, HCMC, Da Nang, Can Tho, Hai Phong, VEC, ハノイ, ホーチミン, ダナン, ハイフォン, カントー]}
+    - {code: MY, name_ja: マレーシア, name_en: Malaysia, gn: "en:MY", aliases: [Malaysian, Kuala Lumpur, Penang, Johor, Sabah, Sarawak, PLUS Malaysia, JKR, クアラルンプール, ペナン, ジョホール]}
+    - {code: MM, name_ja: ミャンマー, name_en: Myanmar, aliases: [Burma, Yangon, Naypyitaw, Mandalay, ヤンゴン, ネピドー, マンダレー]}
+    - {code: LA, name_ja: ラオス, name_en: Laos, aliases: [Lao PDR, Vientiane, Luang Prabang, ビエンチャン, ルアンパバーン]}
+  南アジア・トルコ:
+    - {code: IN, name_ja: インド, name_en: India, gn: "en:IN",
+       aliases: [Indian, New Delhi, Delhi, Mumbai, Bengaluru, Chennai, Kolkata, Hyderabad, NHAI, MoRTH, FASTag, Gati Shakti, Bharatmala, Gadkari, ニューデリー, デリー, ムンバイ, ベンガルール, チェンナイ, インド高速道路庁]}
+    - {code: NP, name_ja: ネパール, name_en: Nepal, aliases: [Nepali, Nepalese, Kathmandu, Pokhara, Prithvi Highway, Department of Roads, カトマンズ, ポカラ]}
+    - {code: LK, name_ja: スリランカ, name_en: Sri Lanka, aliases: [Sri Lankan, Colombo, Kandy, RDA Sri Lanka, コロンボ]}
+    - {code: BD, name_ja: バングラデシュ, name_en: Bangladesh, aliases: [Bangladeshi, Dhaka, Chattogram, Chittagong, RHD, Padma Bridge, ダッカ, チッタゴン, チョットグラム]}
+    - {code: TR, name_ja: トルコ, name_en: Turkey, aliases: [Türkiye, Turkiye, Turkish, Istanbul, Ankara, Izmir, KGM, Bosphorus, イスタンブール, アンカラ, トルコ共和国]}
+  アフリカ:
+    - {code: KE, name_ja: ケニア, name_en: Kenya, gn: "en:KE", aliases: [Kenyan, Nairobi, Mombasa, Kisumu, KeNHA, KURA, KeRRA, Ruto, ナイロビ, モンバサ]}
+    - {code: ET, name_ja: エチオピア, name_en: Ethiopia, gn: "en:ET", aliases: [Ethiopian, Addis Ababa, Ethiopian Roads Administration, アディスアベバ]}
+    - {code: MZ, name_ja: モザンビーク, name_en: Mozambique, aliases: [Mozambican, Maputo, Beira, Nacala, マプト, ベイラ, ナカラ]}
+    - {code: TZ, name_ja: タンザニア, name_en: Tanzania, gn: "en:TZ", aliases: [Tanzanian, Dar es Salaam, Dodoma, Zanzibar, TANROADS, TARURA, ダルエスサラーム, ドドマ, ザンジバル]}
+    - {code: CI, name_ja: コートジボワール, name_en: Ivory Coast, name_fr: "Côte d'Ivoire",
+       aliases: ["Côte d'Ivoire", "Cote d'Ivoire", Ivorian, Abidjan, Yamoussoukro, ivoirien, ivoirienne, アビジャン]}
+    - {code: NG, name_ja: ナイジェリア, name_en: Nigeria, gn: "en:NG", aliases: [Nigerian, Lagos, Abuja, Kano, FERMA, ラゴス, アブジャ]}
+    - {code: UG, name_ja: ウガンダ, name_en: Uganda, gn: "en:UG", aliases: [Ugandan, Kampala, UNRA, Entebbe, カンパラ]}
+    - {code: ZM, name_ja: ザンビア, name_en: Zambia, aliases: [Zambian, Lusaka, Copperbelt, RDA Zambia, ルサカ]}
+    - {code: GH, name_ja: ガーナ, name_en: Ghana, gn: "en:GH", aliases: [Ghanaian, Accra, Kumasi, Tema, Ghana Highway Authority, アクラ, クマシ]}
+    - {code: MG, name_ja: マダガスカル, name_en: Madagascar, name_fr: Madagascar, aliases: [Malagasy, Antananarivo, Toamasina, malgache, アンタナナリボ]}
+    - {code: SN, name_ja: セネガル, name_en: Senegal, name_fr: Sénégal, aliases: [Senegalese, Dakar, sénégalais, sénégalaise, Thiès, ダカール]}
+    - {code: TN, name_ja: チュニジア, name_en: Tunisia, name_fr: Tunisie, aliases: [Tunisian, Tunis, Sfax, tunisien, tunisienne, チュニス]}
+    - {code: MA, name_ja: モロッコ, name_en: Morocco, name_fr: Maroc, aliases: [Moroccan, Rabat, Casablanca, Tangier, Tanger, marocain, marocaine, ADM Autoroutes, ラバト, カサブランカ, タンジェ]}
+    - {code: CM, name_ja: カメルーン, name_en: Cameroon, name_fr: Cameroun, aliases: [Cameroonian, Yaoundé, Yaounde, Douala, camerounais, camerounaise, ヤウンデ, ドゥアラ]}
+  中東・中央アジア:
+    - {code: SA, name_ja: サウジアラビア, name_en: Saudi Arabia, aliases: [Saudi, Riyadh, Jeddah, NEOM, Roads General Authority, Vision 2030, リヤド, ジッダ, ジェッダ]}
+    - {code: UZ, name_ja: ウズベキスタン, name_en: Uzbekistan, aliases: [Uzbek, Tashkent, Samarkand, Bukhara, タシケント, サマルカンド]}
