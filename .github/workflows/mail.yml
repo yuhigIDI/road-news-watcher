@@ -1,0 +1,46 @@
+name: mail-digest
+
+# Claude（毎日7:41）が data/enrich/YYYY-MM-DD.json を書き込んだら、要約付きメールを1通送る
+on:
+  push:
+    paths:
+      - "data/enrich/*.json"
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "送る日のファイル（例 data/enrich/2026-11-21.json）。空欄なら最新"
+        required: false
+
+concurrency:
+  group: mail
+  cancel-in-progress: false
+
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 要約付きメールを送る
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          ARTIFACT_URL: ${{ vars.ARTIFACT_URL }}
+        run: |
+          f="${{ github.event.inputs.file }}"
+          [ -z "$f" ] && f=$(ls data/enrich/*.json | sort | tail -1)
+          echo "送信対象: $f"
+          python tools/mail_digest.py "$f"
+      - name: Excelを成果物として保存（30日）
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-digest-xlsx
+          path: output/*.xlsx
+          retention-days: 30
+          if-no-files-found: ignore

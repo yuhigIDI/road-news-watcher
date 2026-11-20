@@ -27,7 +27,7 @@ jobs:
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          MAIL_TO: ${{ secrets.MAIL_TO }}
+          # MAIL_TO は渡さない＝6:17のメールは送らない（要約付きメールは mail.yml が送る）
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           VIEWER_URL: ${{ vars.VIEWER_URL }}
           MIN_SCORE: ${{ vars.MIN_SCORE || '4' }}

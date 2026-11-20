@@ -5,6 +5,8 @@
       → Claudeがまだ処理していない記事（和訳・要点・判定が未作成）を todo.json に書き出す
   python tools/artifact_data.py build <repoのdata/articles.json> <前日のarticles.json> <enrich.json> <出力フォルダ>
       → 前日までの処理結果と今回の enrich.json をまとめ、articles.json と meta.json を出力フォルダに書く
+  python tools/artifact_data.py daily <出力フォルダ/articles.json> <enrich.json> <repoのdata/enrich>
+      → 今回処理した記事だけを data/enrich/YYYY-MM-DD.json に書く（GitHubがこれを受けて要約付きメールを送る）
 
 enrich.json の形式（Claudeが作る）:
   {"<記事id>": {"j": "和訳見出し", "pts": "要点（3〜4文）", "rel": 1 または 0,
@@ -111,12 +113,28 @@ def build(repo_json, prev_json, enrich_json, out_dir):
     print(f"出力 {len(out)} 件（未処理 {len(missing)} 件）→ {out_dir}")
 
 
+def daily(articles_json, enrich_json, dest_dir):
+    """今回Claudeが処理した記事だけを data/enrich/YYYY-MM-DD.json（日本時間の日付）に書く。
+    公開リポジトリなので、元記事の概要（su）は入れない。これが届くとGitHubがメールを送る。"""
+    from datetime import datetime, timedelta, timezone
+    day = datetime.now(timezone(timedelta(hours=9))).date().isoformat()
+    ids = set(_load(enrich_json, {}))
+    rows = [{k: v for k, v in a.items() if k != "su"} for a in _load(articles_json, []) if a["id"] in ids]
+    os.makedirs(dest_dir, exist_ok=True)
+    path = os.path.join(dest_dir, f"{day}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("[\n" + ",\n".join(json.dumps(a, ensure_ascii=False, separators=(",", ":")) for a in rows) + "\n]\n")
+    print(f"{len(rows)} 件 → {path}")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "prepare" and len(sys.argv) == 5:
         prepare(*sys.argv[2:5])
     elif cmd == "build" and len(sys.argv) == 6:
         build(*sys.argv[2:6])
+    elif cmd == "daily" and len(sys.argv) == 5:
+        daily(*sys.argv[2:5])
     else:
         print(__doc__)
         sys.exit(1)
