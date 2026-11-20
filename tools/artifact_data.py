@@ -18,6 +18,9 @@ from datetime import date, timedelta
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP_DAYS = 60
 ENRICH_KEYS = ("j", "pts", "rel", "why", "repost", "orig")
+# Claudeに回す（＝共有画面に載せる）記事の条件。処理量と利用量を抑えるため
+MIN_SCORE = int(os.environ.get("ARTIFACT_MIN_SCORE", 6))   # 関連度がこれ未満の記事は載せない
+START_DATE = os.environ.get("ARTIFACT_START_DATE", "2026-11-21")  # これより前に収集した記事は載せない
 
 
 def _load(path, default):
@@ -32,6 +35,14 @@ def _recent(items):
     return [x for x in items if x.get("collected", "") >= cutoff]
 
 
+def _target(x, prev):
+    """共有画面に載せる記事か。すでにClaudeが処理した記事は条件にかかわらず残す"""
+    p = prev.get(x["id"])
+    if p and p.get("rel") in (0, 1):
+        return True
+    return x.get("score", 0) >= MIN_SCORE and x.get("collected", "") >= START_DATE
+
+
 def _prev_map(prev):
     return {x["id"]: x for x in (prev if isinstance(prev, list) else [])}
 
@@ -43,6 +54,8 @@ def prepare(repo_json, prev_json, todo_json):
     for x in items:
         p = prev.get(x["id"])
         if p and p.get("rel") in (0, 1):
+            continue
+        if not _target(x, prev):
             continue
         todo.append({"id": x["id"], "title": x["title"], "source": x.get("source", ""),
                      "url": x["url"], "published": (x.get("published") or "")[:10],
@@ -61,6 +74,8 @@ def build(repo_json, prev_json, enrich_json, out_dir):
     enrich = _load(enrich_json, {})
     out = []
     for x in items:
+        if not _target(x, prev):
+            continue
         e = {k: v for k, v in (prev.get(x["id"]) or {}).items() if k in ENRICH_KEYS}
         e.update({k: v for k, v in (enrich.get(x["id"]) or {}).items() if k in ENRICH_KEYS})
         url = x["url"]
