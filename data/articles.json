@@ -1,5 +1,204 @@
 [
 {
+"title": "Indonesia Boosts Freight Vehicle Inspections for Year-End Holidays",
+"summary": "",
+"url": "https://en.tempo.co/read/2124136/indonesia-boosts-freight-vehicle-inspections-for-year-end-holidays",
+"source": "Tempo.co English",
+"published": "2026-11-22T01:15:30+00:00",
+"lang": "en",
+"via": [
+"GN[ID:en] \"Indonesia\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)",
+"GN[ID:en] \"Indonesia\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"ID"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"インドネシア"
+],
+"categories": [
+"維持管理",
+"物流"
+],
+"score": 9,
+"priority_source": false,
+"id": "d74ea3e9d912",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZU5qQy1PVVhEdnZhX0RibXNlcGlVbzEwRkhmUXBDOHFyWE5mMVY0NnpXSXl3N3NxV01ZamlIRGZHT0h1SVRXNGNBMlJaMENxUG5UQVEwX0Fkelp3SGZ2SjZGQnlGbGphSnQzdEh1VHh0NldpSm4tRmNKR2xDSmdKUnBrMnpnNTJHREREQk9jc2hibDZSLUh6bUdoamRmZ3RW?oc=5"
+},
+{
+"title": "India’s wildlife-friendly highways offer Sri Lanka road map to coexistence",
+"summary": "",
+"url": "https://island.lk/indias-wildlife-friendly-highways-offer-sri-lanka-road-map-to-coexistence/",
+"source": "Island.lk",
+"published": "2026-11-22T00:27:04+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Sri Lanka\" infrastructure (PPP OR loan OR budget OR investment OR ADB OR \"World Bank\" OR JICA OR AfDB OR concession OR tender OR contract)"
+],
+"countries": [
+"IN",
+"LK"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"インド",
+"スリランカ"
+],
+"categories": [
+"環境"
+],
+"score": 8,
+"priority_source": false,
+"id": "6028a6bf5445",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTHl2dG5DNmJkWWZybmFWRE5Bd01ibmpiR2FTaWFCRnIyR3hvdWRuTnZ4S2RYQzZTUVlDT1gwd2F3b1Nxa3VCQUNJTzBFVUh1REpfZnJYekZrWkJ2VnE4ZV9weFRPUy1ib0dac0xSYzBMUGlwN2JrQUpOZENGYm9FQW91WHJ4ZF9raXJqdHNLSFRlU09nSy1z?oc=5"
+},
+{
+"title": "Cycling: Honorary Doctorate fuels Azizul’s desire to keep serving Malaysia",
+"summary": "",
+"url": "https://www.thestar.com.my/sport/cycling/2026/11/22/honorary-doctorate-fuels-azizuls-desire-to-keep-serving-malaysia",
+"source": "The Star",
+"published": "2026-11-22T00:13:19+00:00",
+"lang": "en",
+"via": [
+"GN[MY:en] \"Malaysia\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"MY"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"マレーシア"
+],
+"categories": [
+"自転車"
+],
+"score": 6,
+"priority_source": false,
+"id": "3d2ca68ec5fa",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPX240UFNabEd6Q05RNzhPNEYwUWNfNEFZdlRPQW0yaTNjRnRXT3VUdzRVMlk2a1NmdW5aT1lNcHQ0b2oyQ3FXTEI4dXBER1V3VDRUZ0Y4MUJDbXNCOUV5VUZUU0RIRmZpM0tlWG1KaWZTR2d2Ul9pODdTS0xKT3NqX1AtemwxUU1JUU9qMG1jYnlVdlpGbVRLSVZ3ODRHa2hUSkJBUVlaUkF5M2hYVGV6YTctMnowWkk?oc=5"
+},
+{
+"title": "Sri Lanka seeks to bridge trade gap with China",
+"summary": "",
+"url": "https://www.themorning.lk/articles/ygixfyKiBR3Jq7HJpxnI",
+"source": "The Morning",
+"published": "2026-11-21T23:04:39+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Sri Lanka\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"LK"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"スリランカ"
+],
+"categories": [
+"インフラ整備"
+],
+"score": 6,
+"priority_source": false,
+"id": "2147654dadac",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ZTmhvcjhwcHREYjQyYjNlRXJ5X1hnXzZSbnEwUWY3Z1U0c0ZmbmVGb1VvV0pPSXpKY1BCZnhJSmlGTXRKUGo3WGhRNldlV1BoZEVkaW5nd2hscFZEOGpNMFpVcVFFZw?oc=5"
+},
+{
+"title": "Govt plans heavy penalty for number plate tampering to evade toll, fines of up to 8 times the fee",
+"summary": "",
+"url": "https://timesofindia.indiatimes.com/business/india-business/govt-plans-heavy-penalty-for-number-plate-tampering-to-evade-toll-fines-of-up-to-8-times-the-fee/articleshow/136064909.cms",
+"source": "The Times of India",
+"published": "2026-11-21T22:46:00+00:00",
+"lang": "en",
+"via": [
+"GN[IN:en] \"India\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"IN"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"インド"
+],
+"categories": [
+"課金",
+"不正交通対策"
+],
+"score": 8,
+"priority_source": true,
+"id": "6201028b75e2",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOX3FsY0hEVlJ0Z3NwTXFyaTNwS1M3bWphZ3pDVDlsMFR2WXE4TFBYTlRGOFBWbVNvWk1UUTM0Vk85RlMxUTQ3SUcyYkk5RXVPOU50ZkFDYkVuMjd5UEF4YW1udWJVbmdsUWVJSDRjRlNXeVN4VnpRbnI5b3E3YkduT2hxN3NEcTBZTVJ4S1JPZVdWWk5UR3BsQkg1dDZ0bU1oNmZLZGplWHlaNmFNWTRtSi0tcmV6NmlXRDBQTExCdUJ3eGtUSWxBd1ItX1VhZFYzWnd1M2VZVDlLSmNsYUdPQ2ktdHRmNjRuanNNZlZBcEZKSUlQd20wTkhjSi1DTnNBZ2ZZTnVOUGxjTFJKSW5F0gGUAkFVX3lxTE5Vb3kydmxUX1c4VG9nRHRXRVhMSEExdEtIUUVxUmJIVWdJZXk4cmNVVmZKNFh1UTR4eGF4Y003NVROa0lFVUhEelNnN3VPYWlfWTFvTEhmOHg3VVZBNXdteHdBRUpfcFUwa1docFpwRkZBVElXa2NGaXdqSjVNcmU3c3Y1QjkzNFFmbGN1N0dIQmZxNTFQNGdtTkhlNUpOXy1uRmJNZ2JWcmRCSXFqa21kMWtFenBuMk9IVVVPdmZLcXdETGtnaGN6WjViTWUyb0FPTnNjTGVtUVNiMDB6Z2NWbVdkWkVkQ2pTWm9tSlg4SlpOaldyd0JpdEdpQ2p6OE9wMy14XzZpU2V0LVhIR3R6RC0zYw?oc=5"
+},
+{
+"title": "乗用車で原付バイクと衝突 重傷ひき逃げの疑いでトルコ国籍の男を逮捕 名古屋・東区",
+"summary": "",
+"url": "https://topics.smt.docomo.ne.jp/article/hicbc/nation/hicbc-3103708",
+"source": "ｄメニューニュース",
+"published": "2026-11-21T22:42:13+00:00",
+"lang": "ja",
+"via": [
+"GN[JP:ja] トルコ (道路 OR 高速道路 OR 有料道路 OR 橋梁 OR 渋滞 OR 交通安全 OR 交通事故 OR ＥＶ充電 OR バス)"
+],
+"countries": [
+"TR"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"トルコ"
+],
+"categories": [],
+"score": 5,
+"priority_source": false,
+"id": "a8f88513b842",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBqTHhFU2h6Nk15NlN0dF96UkhPblROYVk5WEFrbVZtcnBjLTR5NnhTUVh3M3VVWUljTUJSb3lHOWNERDRBZ0RmUWtVOWZWb2lucWlRQmtFbFlfM3VCdTM2RFN4c3BaUmxFU3dUdzhyaHN5Rjhj0gF6QVVfeXFMTmtlNF9lM1U3YUJ5SXp2UnhMM2Fnek9mdUVjU3pnQ3htZ0ZyR0Y4REZjaGdVbHRSdDFSOVFVZ1Bsd0gxSWNha2Rfb2VSbDdEUldmLXowNGg4dUQtdVVBU3pFWVI3cG1DUEJ5R1h6ODhmai1GM2paTF8xOHc?oc=5"
+},
+{
+"title": "Need To Improve Road Safety Measures",
+"summary": "",
+"url": "https://risingnepaldaily.com/news/88673",
+"source": "The Rising Nepal",
+"published": "2026-11-21T22:17:04+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Nepal\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"NP"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"ネパール"
+],
+"categories": [
+"交通安全"
+],
+"score": 4,
+"priority_source": false,
+"id": "f1f1d48d5645",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAzMzY0b1hLdE5lb1VtbDdRRWM5dndZTjczRUk3bXJHMjE5U1pRVlRaMEcyUWtMaktGSlNWT0IwNGFtMGhid0lJTlVPZ3hzRG1F?oc=5"
+},
+{
 "title": "Nigeria’s Bayelsa boat capsize toll rises to 24, emergency agency says",
 "summary": "",
 "url": "https://africa.dailynewsegypt.com/bayelsa-boat-capsize/",
@@ -28,6 +227,34 @@
 "gn_url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DWTZQbTFmRWxCTkNLM1J4SUMzTjcyTTVmU050NGtGclFsWHF5MWZtZm1aR1FyRklqcHFPNnNGbWxtb3d0SFl0NUk0SG5MTS1DeUVUN3lQVXBvNDhLNDJMMnlybWhldw?oc=5"
 },
 {
+"title": "Saudi Arabia's 73,000-km road network boosts connectivity, tourism",
+"summary": "",
+"url": "https://www.tradearabia.com/News/490005/Saudi-Arabia-s-73-000-km-road-network-boosts-connectivity-tourism",
+"source": "TradeArabia",
+"published": "2026-11-21T21:59:06+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Saudi Arabia\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"SA"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"サウジアラビア"
+],
+"categories": [
+"観光"
+],
+"score": 6,
+"priority_source": false,
+"id": "fdc898231871",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUTBGbGhiQmsydlMwYlFScnlGdnFVMEU3eXZ0MUdmRlFYeWk4QlNKSzlTcEhQY2Vna09oTHUxNk5raWF0eXVmSHZpM1RtemJwWjQxSVNKYVJpVUpIOW9EWTJqV1l2Xy00WEh4NG4xazBmM25pRmNGMWZHdEt3TnZQeTBnR040aENqdU1nX2pFTzFQMWdJYnpHY2pIdUpvbUlldjlwZVl5dTA?oc=5"
+},
+{
 "title": "左から追い抜こうと…車で原付バイクに衝突し男性に重傷負わせて逃走した疑い トルコ国籍の42歳男を逮捕",
 "summary": "",
 "url": "https://topics.smt.docomo.ne.jp/article/tokaitv/nation/tokaitv-20261122-0645-49454",
@@ -52,6 +279,33 @@
 "id": "5f518e03a46b",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaUc1RjdrMHRaUzYxYzBXV1UzbFVWVW53Q0pTbGxzVWx3UGR0Q2wxUkFSZ211cV8zSDZTZHZ5T1JhNHJJVDk4RFlhcGRTazFpWWNXUS1fRUlNX0xPN29ncDJqaDRZTEVSOXdkY0N2VU10VU83RVN6REhDclNjcGp3Z25PbVBnTDhoeGfSAY8BQVVfeXFMTUY4b2tVUWZlRWgzMTRvSUxDMlhlWTJsamt3dkl2WTVSZmNoUUtGekpEUU9OdVZ4VmJ4TDR2VkNaTzQwY1FnZ193VnhDdFJ6enAzUHVXNEl0ZmEwNDZIbzNWRFdkR0RPNmQ2SXJ4U2pSTDJUbkNnYlFuUk8ydVhJdDZKV2Foa1BuZGVJVFphSEk?oc=5"
+},
+{
+"title": "Saudi Arabia Tops Global Road Connectivity Index with 73,000 km Network - News and Statistics",
+"summary": "",
+"url": "https://www.indexbox.io/blog/saudi-arabia-ranks-first-globally-in-road-network-connectivity-index/",
+"source": "IndexBox",
+"published": "2026-11-21T21:40:53+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Saudi Arabia\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)",
+"GN[US:en] \"Saudi Arabia\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"SA"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"サウジアラビア"
+],
+"categories": [],
+"score": 5,
+"priority_source": false,
+"id": "1e25dcaa9e6d",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZlZrV3IzU2hJb29hX2lQVzB3UmQxdG5BZ2d1Wlc3d2pJcnAtOFFFQlhucHQwOUZvQTV1VDBDTnNwVUlUcFI0NlJ0bXBNOEZFMGFpYkxDWGlpY19ZUG1sUHJyT0E4SnhKM0FnRGFRdDFudjdqaDJYR052WVExZ0RQT0VNeHpqc1B0cC1zWGRpbWlwaWdFZmFPbHVKNE11Mjg?oc=5"
 },
 {
 "title": "Treasury toll proposal leaves Nairobi–Thika motorists without rates",
@@ -137,6 +391,34 @@
 "id": "eb1308b44b4c",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVy1lUDRFVDJKUDRwSFJLTDhNTURwZjFGajJFLWd5UHd6ai1lVUpkY3BmaUJFZ3dZRE04VldOWHFhOVRtRGZEamZtcDF6Y3pBMXI4U25sdVBpUkEtdG5taVlXS0NxNnpZQkZ4dlo0S1NrZ3RaTUhGMGtlazAtb3NtLWEwTW00VFl5RHVKakgtM0F0NndOeEFYWklDOVlzTDBVOUVHZTJUN0ZUTUhtaVdOUnJzbTBSbF9tZ1JFLVFhMktCeElOWS1mWmNkYjFwMkdYZldZNXVBSmhpa2dfUlE?oc=5"
+},
+{
+"title": "Infantino: Tinubu Doing Fantastic Job In Nigeria With Investments In Sports Facilities, Infrastructure",
+"summary": "",
+"url": "https://www.arise.tv/infantino-tinubu-doing-fantastic-job-in-nigeria-with-investments-in-sports-facilities-infrastructure/",
+"source": "Arise News",
+"published": "2026-11-21T20:02:54+00:00",
+"lang": "en",
+"via": [
+"GN[NG:en] \"Nigeria\" infrastructure (PPP OR loan OR budget OR investment OR ADB OR \"World Bank\" OR JICA OR AfDB OR concession OR tender OR contract)"
+],
+"countries": [
+"NG"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ナイジェリア"
+],
+"categories": [
+"投資・予算"
+],
+"score": 6,
+"priority_source": false,
+"id": "4d033638974d",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVF9LV2MyREZuWVRidU4yd2E1LXZSS1pJSk9TZ0RqVEJidmlUYm9nN1plTzNfcWsySHMyM1FhZUZJSldZdEhzZGIxLV9janNReG83d2liVFd5ZzVISXJuVWl1OVgzeXY0dmRZNWd1cTl4RXhydUJhNUh1RmlTLUFDc2dhaUdteXJjS0tqcmQzclBkVjlrWTdmcDF1ZlFYaDZLUHJVc2llak9oU3RLenRMSFR5XzBQTXZNSUs3ckcwNA?oc=5"
 },
 {
 "title": "“London Post”: 31st Tashkent International Tourism Fair “Tourism on the Silk Road – TITF 2026” to be held at CAEx Uzbekistan on November 25–27th",
@@ -843,6 +1125,36 @@
 "gn_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa3JUNXJVWC15RW55T2VJR0Q1aTNvX3pfa292djNfaDJzSjNLd19xblVJUGhfNTFkVlF3Q0RhdGxLY1RuOTMxVUFxM2tKYzczaTgtWXpRbGdhLVdPR0NkdWF4WXQxV2xpTHBBSzctdkpLSjVWMllqX2lMMjhnemRsX0hsNjdDU0tSQjdXbmxIUDlwMlBGREItOEdBQ3ZGYUZWNm1zcXVYbk5Fdw?oc=5"
 },
 {
+"title": "Turkey Launches Combat Drones from Highways, Impacting Pakistan and India",
+"summary": "",
+"url": "https://timesofislamabad.com/21-11-2026/turkey-launches-combat-drones-from-highways-impacting-pakistan-and-india/",
+"source": "times of islamabad",
+"published": "2026-11-21T17:06:22+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Turkey\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"IN",
+"TR"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"インド",
+"トルコ"
+],
+"categories": [
+"技術"
+],
+"score": 6,
+"priority_source": false,
+"id": "5da7db0f6be0",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcXJUWE4yQW8wWGlCNDhRbTdQUWl1NEJpQnQ5SDlHZVZnNnZGdXkxSnUwakJLdTkzUkgzZDlqdWRYekl3UnUtbWVWdS1laXp2dTUzOG10V0tKM0JKSkRMdnpGeHRIYzVWcmdYQVY4TGVCVUNKUUZfSVBCejBhbmxFLVp2RHdyVTVSczlRU1R6dnV4TDhxM1FPTzNYb0FyWFl1TUpDLUlDbXQ2VUJmUTFjUUhYRQ?oc=5"
+},
+{
 "title": "Cycling to the top in Singapore; Ceaser Wesala's entrepreneurial journey abroad",
 "summary": "",
 "url": "https://youtu.be/evOGAkK6FEQ?si=ydFg0w2DBYkHYTw0",
@@ -1096,6 +1408,35 @@
 "collected": "2026-11-22"
 },
 {
+"title": "NTSA, Police Launch Fresh Crackdown on PSVs, Trucks and Boda Bodas",
+"summary": "",
+"url": "https://www.kenyans.co.ke/news/129576-several-vehicles-impounded-ntsa-nps-intensify-nationwide-traffic-crackdown",
+"source": "Kenyans.co.ke",
+"published": "2026-11-21T16:10:39+00:00",
+"lang": "en",
+"via": [
+"GN[KE:en] \"Kenya\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"KE"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ケニア"
+],
+"categories": [
+"物流",
+"不正交通対策"
+],
+"score": 5,
+"priority_source": false,
+"id": "3da6eeef36b5",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYVRtY2VfRExEdXQ5SDYzbjV4N2tEYmJucU1RYVdDMXRSQU05aUZBVVUzcHJqNzI3NWpmYTNCS2NRRV9SdHlZenJ6X21EekF6MmJhaDh4TjBfMHJKRzdMS1BxNURzamNEZXpOSzZMX2JnZ1BHa1h0VjNvc2pYb3dac0pNNVBWcUxsMnpNMEpkRVFlY1hIZmhfdThpZl9GdGtUNzN0THcweHpMbkp4OW84QWRB?oc=5"
+},
+{
 "title": "P16.82M contraband seized in separate operations",
 "summary": "MARAWI CITY — Law enforcement authorities arrested two suspects and confiscated P13.39 million worth of suspected smuggled cigarettes during an intelligence-driven checkpoint operation in Barangay Cadayunan here on Friday, Nov. 20. Police Regional Office Bangsamoro Autonomous Region (PRO-BAR) regional director Brig. Gen. Christopher Abecia said on Saturday that the major interception underscores the police’s relentless campaign to tighten checkpoint security and shut down major smuggling corridors across the region. Abecia identified the arrested suspects as Ricky Saberon Alesna, 48, the truck",
 "url": "https://www.manilatimes.net/2026/11/22/regions/p1682m-contraband-seized-in-separate-operations/2475559",
@@ -1298,6 +1639,62 @@
 "id": "563a5c49bcd4",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQ2Eya1pqMzZ2UFFpRm4wRzNXNUJoN2UyNjVja1Z6N1FBMjRLaTFxcDhqcmVsY2pEbzhoRDNvZjRub2V1dWxoOXRwZmFvaXB6TjB4bWktUXVaQzcxbFZPM2NDS2hROThqbGZxeGhidFBxcl9RNVhtOG5xNFkxLU43enV6UExzUTEzejJOb2VaRHRvdzQ3NVVlV1BqREczWGRVU2s3c0FtS19KZGN6YkRSRE1ySHJFOGVZeEd5OXF2NA?oc=5"
+},
+{
+"title": "Lagos Reopens Ozumba Mbadiwe Road Section after 33-Day Rehabilitation",
+"summary": "",
+"url": "https://www.nigeriainfo.fm/news/homepage/lagos-reopens-ozumba-mbadiwe-road-section-after-33-day-rehabilitation/",
+"source": "Nigeria Info FM",
+"published": "2026-11-21T15:08:47+00:00",
+"lang": "en",
+"via": [
+"GN[NG:en] \"Nigeria\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"NG"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ナイジェリア"
+],
+"categories": [
+"インフラ整備"
+],
+"score": 6,
+"priority_source": false,
+"id": "fbee1f20f5bb",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbGRwNGxrVjJPQ0FrNGZDcjlyTzVvOUFaRXc4NnJmN21CeExZVVB3X0xwYnhNalN3cndJcnowMVZkOXFVWV83X2dVVDFmaHJUQnRyeHVQcHpvVHZYSWVKZDFiZl9qcTJ6OXFka2ZtWUhhTko2Q01UYWthQVd0TV9LN0ZZTmY1YXgyZGEtQjNRZ0JJcW00YzE4S3VsVWM3VGVnbHRzSVZoakZoWXQ3elVQNA?oc=5"
+},
+{
+"title": "Two women killed after being thrown from car on Federal Highway",
+"summary": "",
+"url": "https://www.thestar.com.my/news/nation/2026/11/21/two-women-killed-after-being-thrown-from-car-on-federal-highway",
+"source": "The Star",
+"published": "2026-11-21T15:08:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Myanmar\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"MM"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"ミャンマー"
+],
+"categories": [
+"公平性（エクイティ）"
+],
+"score": 4,
+"priority_source": false,
+"id": "9d1005c82b9b",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYng3bE1XVXo5TzJKWmxfT3cxdzFwZzhQRG5hQjF1VERvREFjc1hyTnlONVloSk0xdllHeTNRdTU5NUF2Y3JTeHAzcjlSUm5SSWQ1QmozemxRVVVya01PR0lWN2dGRDQ0cnFWamtRT2JJRmJ0dmdYeEw3UzNFSzYzaHZsZXRsaHhZSVZEN3hqQWZIak1aTDItamxUZ2plZGIxSnhSTEtQa2Q1aFVhWWF4LUY0TQ?oc=5"
 },
 {
 "title": "Vehicle import taxes under spotlight : What Parliament discussed",
@@ -1864,6 +2261,62 @@
 "gn_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcHU2WFZXcUp4UUJ1NHhOUnJZQjFZbnp1TmN4Ul9WQjdWUE9QVDU5M3UyaHVseWs1clczLW5yWHRsMWZsaEVxMUZRbVhQRFFIaVBvMHZsYWxDQXNrRWxqYVduajdfZVh3dS1JQXNhQWk1WXFmb1pxUmVIWHZuU3dHQTZzb0pJSUFUa2JYZWFjTDdmaHQtSkNiZ21XNHFDVVl1VTliTjlPRG1SZVRPazU3TnNEMlREcTFiY0ZhUG94Vk5NVVc1NXl6VHZQWdIBzwFBVV95cUxOS05GRzNhR3J2MVJtcS1UczFMSVB1VVZPaVYwV1VKM1djWWczRHFPSHR0bjc2MmRTaEVIZzIzOXR1UDhJbFczOVlYaGpLZC10Tnc3UFV3aGc1Wm8xUFFyNFZJOTVDWjVRcWxqMDZsaTJ6anBiN0tzU3A3MnlrU3ZqWHFKMVA0SWwxUzNLTGM3UEdaSS04aVNoZFBEUVRPM1BaYnpZcmN3U01qTkNBSnNIei1Ra1ZOeF9EaEU2MXdlT21NTjhkQ2ZXUTByNXNBT0k?oc=5"
 },
 {
+"title": "Uzbekistan’s Customs Committee responds to reports of truck queues at Kazakhstan border",
+"summary": "",
+"url": "https://daryo.uz/en/2026/11/21/uzbekistans-customs-committee-responds-to-reports-of-truck-queues-at-kazakhstan-border/",
+"source": "Daryo",
+"published": "2026-11-21T13:16:54+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"物流"
+],
+"score": 6,
+"priority_source": false,
+"id": "8de67003c843",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTi1mQWR4dFRMSk5wN1hXNXFzbUdEWXllbGs5WF8wMGd0VUdPY3BxR09WNWhiNVJVZjViMXZwU19td0Y1eVUyVzVfS0FRZVhzblhiZnNWdThwU3JGd3pqakRiVnBsdEhpVk95Z21fNWxkaFI5bnZLUGh3Rk9idnluSllZVjdaMkc1SVVuX0hNTzdGVGJtbGpLaW9tR3dwcEI3bG1YNHNjWXZnbDZDUlo3WElxYl9wQWE2LWc?oc=5"
+},
+{
+"title": "President William Samoei Ruto launches the tarmacking of the KSh3.1 billion Masaek-Chepkurkur-Banantega-KDF Camp and Banantega-Kaboriot road at the Kipsigon trading centre in Mount Elgon Constituency, Bungoma County.",
+"summary": "",
+"url": "https://www.facebook.com/kenyanewsagency/posts/president-william-samoei-ruto-launches-the-tarmacking-of-the-ksh31-billion-masae/1455070003475308/",
+"source": "Facebook",
+"published": "2026-11-21T13:15:01+00:00",
+"lang": "en",
+"via": [
+"GN[KE:en] \"Kenya\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"KE"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ケニア"
+],
+"categories": [
+"投資・予算"
+],
+"score": 6,
+"priority_source": false,
+"id": "0c3546898e15",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLURaSk5nek55Ynp0S2ZxLXF4TGJxMWN6SVVoMWJpVVk2b1p0cTFRYThncUVmU3pmSFl5Zm5FT055Uy10YURDMmRTbDdkamoyM0JlYXlLWGZFYWlOLWNLbHdzTVVKeU5SQ1h4MExjTDh5d0hqWG9nVlVtamRhRm9RVmEtTVZaUDJzUVNsa05nU1p4c3NwRHYwVnM2aW9PY1NxZXAwck51ODFGNlBKMEVrMkhDZ1owWUF6d0xzenpBWVNUSTRNOGx6RVJLX3NvQl9kSGlfbGk1dWs0UUpLVGc?oc=5"
+},
+{
 "title": "ベン・トゥイBOT料金所は11月25日から料金徴収を再開した。",
 "summary": "",
 "url": "https://www.vietnam.vn/ja/tram-bot-ben-thuy-thu-phi-tro-lai-tu-ngay-25-11",
@@ -2145,6 +2598,35 @@
 "id": "ac66ad511e54",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOHBKU05lTkxpaWlvYkRjQjBrUElPZzdRbkpwdUdwX182UllTZEVkYkM1RjYtcUVMeVVBMmV4bElJN2xsT2tsSUNkVFN1emc2N2d3UE9ma1VBeExvVW11R3hfelVTcWREQzJGX2VyS2RvZ2J1TmUzeHFEZ2ZYaXJCemZkTl90bXNPaF92Z0lEclJVeTNIUl92QzdtdTVFVG5lUUl3aERRZndyVTh2TG40Z3YtTVFId18zT3B4aV9NR2JqcFhHd29yeW9UdnZ0enJkSVlDLUpzcFQ?oc=5"
+},
+{
+"title": "Thailand only a transit route for drug syndicates targeting Malaysia, says Kelantan police chief after 700kg meth bust",
+"summary": "KOTA BHARU, Nov 21 — Malaysia-Thailand cross-border security cooperation has continued to strengthen, with authorities i...",
+"url": "https://www.malaymail.com/news/malaysia/2026/11/21/thailand-only-a-transit-route-for-drug-syndicates-targeting-malaysia-says-kelantan-police-chief-after-700kg-meth-bust/244244",
+"source": "Malay Mail  -  Malaysia",
+"published": "2026-11-21T12:16:00+00:00",
+"lang": "",
+"via": [
+"RSS Malay Mail Malaysia"
+],
+"countries": [
+"TH",
+"MY"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"タイ",
+"マレーシア"
+],
+"categories": [
+"物流"
+],
+"score": 11,
+"priority_source": true,
+"id": "2b14fe0d8381",
+"collected": "2026-11-22"
 },
 {
 "title": "Vietnam Culture Day 2026 kicks off in Hanoi",
@@ -2961,6 +3443,33 @@
 "gn_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPeGlBcnVzMFRzYmQxOXhQdk9xUElJOVlESXdublN4S202d2Rtdm9NdTNhNWJwUDl2MDE5cV8tLVhKTFhZaER5YzBVSHlJNGhUY3Yxc2F5clFoakJ3OERSa3hidHBwcThZUlZXTjBaSTNnZkVPWE5XdXVGdDNnaEEtVk40S1o3TFlVdExDSkdUaThlZ0pyNGlzcVgwUGFKcS1NejkyVUF1cURIcFVBNVJsVE5lSzNqWHFxamhXWGQ1Rkg5OE9SN0lDRFp4SGVwbmZHQk8xd2gtcjY2VXQ2dkE?oc=5"
 },
 {
+"title": "Four teenagers under 15 arrested after ramming police car during chase on North-South Expressway",
+"summary": "IPOH, Nov 21 — Police detained four underage teenagers (under 15 years old) for allegedly obstructing public servants fr...",
+"url": "https://www.malaymail.com/news/malaysia/2026/11/21/four-teenagers-under-15-arrested-after-ramming-police-car-during-chase-on-north-south-expressway/244239",
+"source": "Malay Mail  -  Malaysia",
+"published": "2026-11-21T10:33:00+00:00",
+"lang": "",
+"via": [
+"RSS Malay Mail Malaysia"
+],
+"countries": [
+"MY"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"マレーシア"
+],
+"categories": [
+"高速道路"
+],
+"score": 7,
+"priority_source": true,
+"id": "3b7f95c01360",
+"collected": "2026-11-22"
+},
+{
 "title": "MENA Countries Tackle Infrastructure Financing Challenges at PPP Forum",
 "summary": "",
 "url": "https://news.uppersetup.com/mena-countries-tackle-infrastructure-financing-challenges-at-ppp-forum/",
@@ -3663,6 +4172,35 @@
 "gn_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYl9ucGVoTWJNS3E2SDVUTmJYek8wREZPWkIzcXY0Ty05YjhFSGxYc0REUGVoVUFPWkdmVXdrUWRWeFJvX3cxajh1dmN1d1FRT05lZlNTN1hvU1VkQS1uSnNfOEJRWGR4dFhkUzkxbkh0X3BCcjFoR1V1TGZJUEVRUjlvRUs0UFRwNFFxUjczOV9GYlFmRDcybzVMcTVYNi1iRUpMR3p6bXZ4LVVHUUpzZ3RaOHE?oc=5"
 },
 {
+"title": "Simba Corporation launches MG in Kenya, announces KSh 1 billion electric vehicle assembly investment",
+"summary": "",
+"url": "https://www.livenowafrica.com/business/article/simba-corporation-launches-mg-in-kenya-announces-ksh-1-billion-electric-vehicle-assembly-investment",
+"source": "Livenow Africa",
+"published": "2026-11-21T08:42:15+00:00",
+"lang": "en",
+"via": [
+"GN[KE:en] \"Kenya\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"KE"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ケニア"
+],
+"categories": [
+"投資・予算",
+"脱炭素"
+],
+"score": 7,
+"priority_source": false,
+"id": "9e7b1aa44315",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbUFMaDFGSHZ0ZkFORWE4OXBiSE1HeUw2eno1Q2lmaHB1SDVUTGFEcXl5Wk8wNE9vTTVUQzdsbVV4Q2tpUmREMld4OW1kVnZ2SkhlZHdvTGhZZTliTnVjM3BpbEl3MEk5T0hyQ2tMWlFhMHpkbzlVY0p3LVUwTGVQcWRTSzBCRTVIVEJWaS1UMDBxVTRLczdtclE5UHVEaUxVOHVqTGZYU1c5cGJsWmVrTnI0T3hjcXhtUGpaRUNpbjdVTXl1aE9ZeEJPbTRDWjZ6ZVRIbU5wWDBCdTduNkFF?oc=5"
+},
+{
 "title": "Elderly man from Manesar dies after falling from bus he clung to; FIR against driver, conductor | Hindustan Times",
 "summary": "",
 "url": "https://www.hindustantimes.com/cities/gurugram-news/elderly-man-from-manesar-dies-after-falling-from-bus-he-clung-to-fir-against-driver-conductor-101795250395751.html",
@@ -3746,6 +4284,31 @@
 "id": "fb613336b146",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZEF4cWFXZW1wcjZjQjdlLVZlSWxQbTBBQnNlOFhYT0hHTzVoRDZGM2ZqWHh5UDFOUk8xMXZhaHFYazdFcl8zU0hGU2JtbWpJaldZOTdEOHBma3E3a1Q0WVdraGNFTlhnMUpoVnVydVdYNTNLaURJcTFZeTYxVmFCcW1mUnY5MHd4V0Z5eThDZ1NVT3RMY0FNakJvMVRPS0V6X3BpX1hzdzlCdVhHWEk2RVd3?oc=5"
+},
+{
+"title": "Two vehicles, one viral cable heist: KL police on the hunt for daring thieves outside TREC",
+"summary": "KUALA LUMPUR, Nov 21 — The police are actively tracking down a group of individuals suspected of stealing cables in fron...",
+"url": "https://www.malaymail.com/news/malaysia/2026/11/21/two-vehicles-one-viral-cable-heist-kl-police-on-the-hunt-for-daring-thieves-outside-trec/244224",
+"source": "Malay Mail  -  Malaysia",
+"published": "2026-11-21T08:33:00+00:00",
+"lang": "",
+"via": [
+"RSS Malay Mail Malaysia"
+],
+"countries": [
+"MY"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"マレーシア"
+],
+"categories": [],
+"score": 7,
+"priority_source": true,
+"id": "ca730c46137d",
+"collected": "2026-11-22"
 },
 {
 "title": "フオン・チャン社は、ベトナムで初めて都市間移動向けの全電気式寝台バスを導入した。",
@@ -3948,6 +4511,35 @@
 "id": "8a35b2079133",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTnpKU1FqbDI3aVNMd05tQzFZS3M0U0ZyclZCdmNHcXhyU2RVZjhKYzBRUHJiaHpSQng3eVkwcVBHNVhLT0RVQTFpSjNHRUZBWmhaak9KR1hMYkRBOWE1czY5VUNOSGJLc0VyQThhMXFlVzhVbko0WEVfRWtPdUVUT3RkVW1Gd1hLUS1YVGEyZzEtYkFyVU45VEpWdnU1ejQ3LVN2VEhvRmRqT0RMV1BPRzYtYVZFbGFG0gHGAUFVX3lxTE9VVnVXYU5aOWt6YlZjVE5kaDA1ZEpPY1g3eldaR3Jvc2ZycVFwXzJXSWV3YmxZZHk5WHMxSkpDWUV3Z3pKQUZJcEFqX3Z1ODQzLWRJcERKdU1PTEE0NjAzd3FObXRfX3ZBTzVzc0JWRmJjYXhWS1BZU2d3Y0pDRGVEbWlLUzhnQklkenNqX3Zyc1c2cGdOMHpzbkNtckc5b08ybjZiQXA2ZUlFcl9OTWxrRG5Ba2VyYnlYZUNDRVNZUElXVzBHQQ?oc=5"
+},
+{
+"title": "Sejingkat Bridge won’t shut Pending Port, Sarawak deputy premier tells DAP critics",
+"summary": "KUCHING, Nov 21 — Caretaker Deputy Premier Datuk Amar Douglas Uggah Embas has hit out at the Democratic Action Party (DA...",
+"url": "https://www.malaymail.com/news/malaysia/2026/11/21/sejingkat-bridge-wont-shut-pending-port-sarawak-deputy-premier-tells-dap-critics/244220",
+"source": "Malay Mail",
+"published": "2026-11-21T08:15:53+00:00",
+"lang": "en",
+"via": [
+"GN[MY:en] \"Malaysia\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)",
+"RSS Malay Mail Malaysia"
+],
+"countries": [
+"MY"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"マレーシア"
+],
+"categories": [
+"インフラ整備",
+"物流"
+],
+"score": 10,
+"priority_source": true,
+"id": "ff969a90285a",
+"collected": "2026-11-22"
 },
 {
 "title": "Indonesia widens ICAO ties for sustainable aviation: Minister",
@@ -4677,6 +5269,33 @@
 "id": "48db025e518c",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE11QVFtT3RKTWtVUXpYd25ObFRfcG5QMHZnZlVYT29hNzdVOGxNRmtrb2NkOWhJV2oyZnpyQ01MQVlXUG1XY1U1VzRsaWhWcFFSWHpiQkRfbTlnOEQ0YjVOSWhRZGJJWmI1TkFpTDhn?oc=5"
+},
+{
+"title": "UKM logo to ride on Pocket Rocketman Azizulhasni’s jersey all the way to LA 2028",
+"summary": "BANGI, Nov 21 — The Universiti Kebangsaan Malaysia (UKM) logo will now feature on the jersey of national track cycling c...",
+"url": "https://www.malaymail.com/news/malaysia/2026/11/21/ukm-logo-to-ride-on-pocket-rocketman-azizulhasnis-jersey-all-the-way-to-la-2028/244204",
+"source": "Malay Mail  -  Malaysia",
+"published": "2026-11-21T06:11:00+00:00",
+"lang": "",
+"via": [
+"RSS Malay Mail Malaysia"
+],
+"countries": [
+"MY"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"マレーシア"
+],
+"categories": [
+"自転車"
+],
+"score": 6,
+"priority_source": true,
+"id": "a17746c5e5ea",
+"collected": "2026-11-22"
 },
 {
 "title": "Bus-motorcycle head-on collision kills two in Gopalganj",
@@ -5811,6 +6430,35 @@
 "gn_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaEdYTlhTRWpoa09ZclhWMm9MWWQtWkl2N19kVjVVSU9QUk05TkFSQWs0UDNZaDZWQWpPNHpiN19UeXhjdzVQZFZzV3V3cTdjenphUDYxQkFvbmYyZ290dEtiNU5WX0M0ei1hZEVIY0tsZENTcnFnaHMzVF94dkl0UlFOOUg0N3FjWENWaTJWcFRob3p2SkJlMllyWDRvSll6eWZyeGxQdnpRWHN6VE1oMm5aUm0yLXJ3UndDR0FjMHdMamvSAccBQVVfeXFMTVV4Y211a3A4a1YzbGF5bUtMdDNfZGFJcmVFYjUzOWNTRXBJV1hXRGh5eWNxUTBYbDVLRnpmY1dESllyeGNCUWt6a0tSd3FmYlpEMU5pdERGeHJ6aHpOeTA5b2Zoa1JIWE00SFpBYkJPZU1LS0N3bTIzeUlBeDBLcXNVU2lsRDBwVlM4ZWp5VVpmWlBTRWpSZlVQYzhGa3JrRUx2dGJnUmRxVTltdXdvQ2Y2X0hWZ0V6My1jYS1uUFFZaDgzSWd6Yw?oc=5"
 },
 {
+"title": "Road Crashes: NRSA Calls for Urgent Road Repairs as Crashes Exceed 13,000",
+"summary": "",
+"url": "https://www.modernghana.com/videonews/joynews/2/758220",
+"source": "Modern Ghana",
+"published": "2026-11-20T22:20:00+00:00",
+"lang": "en",
+"via": [
+"GN[GH:en] \"Ghana\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"GH"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ガーナ"
+],
+"categories": [
+"維持管理",
+"交通安全"
+],
+"score": 5,
+"priority_source": false,
+"id": "b61e59e8a8b0",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KMHdoTDhNdmo1THdpbTlkTnFuMGozOG82aVpacnd4VmplVFNmaWdvbzFjdE1fTmJFM2NPTFNnZkxJeDBxU1NFNG01YlFianZ4QWowY0stcm9SYlVvZG81Qm5xTTbSAVxBVV95cUxOOXBDQ1otQWk5ZW42aXR6RXY5U1JleWhsUzBRaFFna3VLRHNmaUgwLUZKV2IwUHNvT2xvbTZzclEyS0dYcWJKN00xQ3pvbDJ6QXlLNHQtTVhtUFhUcQ?oc=5"
+},
+{
 "title": "Marcos secures $41-B investment pledges in China",
 "summary": "SHENZHEN, China — President Ferdinand R. Marcos, Jr. secured $41.1 billion in investment pledges from Chinese companies, along with commitments involving wind energy and electric vehicles, during business meetings on the sidelines of the 33rd Asia-Pacific Economic Cooperation Economic Leaders' Meeting in Shenzhen, China.",
 "url": "https://bworldonline.com/top-stories/2026/11/21/795594/marcos-secures-41-b-investment-pledges-in-china/",
@@ -5865,6 +6513,34 @@
 "id": "eeb8d2803cf6",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQUDBqWVlCSWpDT2kzSGxjLUZ0YlY4TkVxWWpLRi1vZmxUQXU4VUQ2bDI2LVYzbXlUbGYwQ05YMEFXSGU5SzhKcnZPTnJ1dVE1YnlPZG1rTzNqZjNDSnMyTlllYmhLWTBBWUozR3R3ZFRidFFmbkdyUkxxVk1EUkJPTnV1UklVY1ZHZTYxRV9IZGVhUVNWa3V0LWlOQTdZd0NWVW9zcHp5VmZQcE1xUDNFam51TWhuM3Z0bGV1V2F3SkpKZ01CSlA5OS03U3h6aHpZa3B4MjRoY2ZrREU4dEpGVjh2MmozS2RrVENvNlBXWDZ2RnZ1U1NUbUNvQThaR3ZN?oc=5"
+},
+{
+"title": "Nine provincial airports and two rail projects will soon be upgraded through public-private partnership, said Transportation Secretary Vince Dizon, adding that some of the PPP projects may be awarded next year. | via ANC 24/7 Link to full story in the comments",
+"summary": "",
+"url": "https://www.facebook.com/abscbnNEWS/posts/nine-provincial-airports-and-two-rail-projects-will-soon-be-upgraded-through-pub/1774514708057111/",
+"source": "Facebook",
+"published": "2026-11-20T20:00:09+00:00",
+"lang": "en",
+"via": [
+"GN[PH:en] \"Philippines\" infrastructure (PPP OR loan OR budget OR investment OR ADB OR \"World Bank\" OR JICA OR AfDB OR concession OR tender OR contract)"
+],
+"countries": [
+"PH"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"フィリピン"
+],
+"categories": [
+"PPP"
+],
+"score": 4,
+"priority_source": false,
+"id": "6f5dc8817a34",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQck1hOHE4ZWFFZ3NMaXhfM2lsUEFqc1E3RXRBaGRQR3ZDVmNpVlIwUFRqSVhPaWZKQ3l1V19KQm9xY2tjbmtuRHlNaDlxUWIxRHdQcXlYNHNaQS1ab0lkX2NpT0VFZW5ULUdpSkpXaVNXdzJ3MFRpX0pWc0o0cHVacEN0VzhfSlZ3ZXVvcDVydFVNeFNHM1MwVFRweXVldzZSYWdFY1ZtYUVLTWN5Z253TFVLOVZ2OW1GVDZ4QUVLZjhGQkxwUkJvTDM2VXVZRTY0ejFwVjBPbw?oc=5"
 },
 {
 "title": "Russia bombards Ukraine, killing at least eight after Kerch Bridge attack",
@@ -6261,6 +6937,66 @@
 "gn_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdGVwa1VRa1hvNGI0SDBicHB4SG44RHVoZ0NfRmtBYzhNdERZdUFZM1JnQzQ4MWVfaldYVEF5aHd6Q2dkeGdSdDlqNzlZVFVjUTRqV216TXd0VDFJaGJzdkZjTUhhRVFtRzBPcmNNTkRaTGlmWWNUWUpvRDRjZ3NZeV9iLW5uRnRuckcwLXFzZ0VhSlBLQVBqZmZVMTltNjhnNkFiUEhMNEJvcm5tMHkyUWtRYWdKbkhhTWdKSF9pX1ViYzlQbWpxUmdB0gHPAUFVX3lxTE9yRzNNZDM2VzFMcjF1Z0R6cXJwQXY1enZZcWFFa0xvd3pRRGtJSG1PRzVPcjdjd2xoU09WSFltdlVNSDNPN1ZWVkZ3Q1NvSWpGYk5hc1I3SnZxN3BjWGM0NVlOZkZ0TVRqMDRpZURpYkhtSzg1cEUzYnh2bFA5ZE9IOG5ZSkR0M3U0TTlVQnlQV3F2eGRERVBUQkQyTXBhX1otWU45dm5mczhyZmVTOXVoTGl6NndRUU53MHFwVTZ1aUVhazBMQTdjaGFIMG1wZw?oc=5"
 },
 {
+"title": "Samarkand may launch electric bus production with Turkish company Anadolu in 2027",
+"summary": "",
+"url": "https://kun.uz/en/news/2026/11/20/samarkand-may-launch-electric-bus-production-with-turkish-company-anadolu-in-2027-61620",
+"source": "Kun.uz",
+"published": "2026-11-20T13:33:03+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"TR",
+"UZ"
+],
+"regions": [
+"中東・中央アジア",
+"南アジア・トルコ"
+],
+"country_names": [
+"トルコ",
+"ウズベキスタン"
+],
+"categories": [
+"脱炭素",
+"都市交通"
+],
+"score": 7,
+"priority_source": false,
+"id": "fc0e7cbaace0",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcFZ1UEN3emZOYUo3Sy1vdF9QYjBWMXdHd1BHOXlHY0RzcUcxWmFXdFh5SHpoQXdCT0ZfSkNwc1ZlNUJsLU5oMVdXQVVhdnRsV0ppelNzd2M1VGdNMWtkdXJqd2NFbTBhZklkWks5UmI5b1V0WVVjdHB0bmE4TTZ0Uk1lVkd0QzNZNWE2SEViSVZfdEhLY3RYUVB0d0k1cE9fZm55M09vVEFwczFoMXcxNWFfSzQwSmJEWU9HdXln?oc=5"
+},
+{
+"title": "Tazara revival to boost freight capacity to 2.4m tonnes",
+"summary": "",
+"url": "https://www.thecitizen.co.tz/tanzania/news/national/tazara-revival-to-boost-freight-capacity-to-2-4m-tonnes-5678750",
+"source": "www.thecitizen.co.tz",
+"published": "2026-11-20T13:00:00+00:00",
+"lang": "en",
+"via": [
+"GN[TZ:en] \"Tanzania\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"TZ"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"タンザニア"
+],
+"categories": [
+"物流"
+],
+"score": 4,
+"priority_source": false,
+"id": "5b4d7b593bd5",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb3pBbHR2dE9EejRmVHFNQk80N0tYdnJvR0lxM0Z1emtUNVFoOGJIVm9weEhEdTV5UmE3djZFdFRSUnRhcGY2dWdUYjd5MnRBNDhKeFVqSXV5MjlFZ3Z3X1puZ0Z1RmJXU1Y4VnhIdWppNmt5a2VPTWFkUUFxb1JsMGlFQ204X2ZLb3l6V3RQSktnckVieUlLU2xGX0hmTlRzZEVBX0Y2TEFTNlBZdnFYTjJ2Unl5dw?oc=5"
+},
+{
 "title": "砂漠、塩、火山：エチオピアツアー写真、2025年2月 - アフメド・エラ集落近くのダナキル砂漠から高地へ向かう道路 (c)",
 "summary": "",
 "url": "https://www.volcanodiscovery.com/ja/photos/ethiopia/tour-feb2025-impressions/image30.html",
@@ -6341,6 +7077,34 @@
 "id": "7818fca3f6bf",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONFZyQUNGb2VKVUZxRWphNG1DZUY0anJQTkJXSklKN3ZMbm5VSnM0WElXcTdieTRfUHhxSnRKSGxpTmdfTFlrZnR6aEtnMVVQZFEzYThnRzdlbnVXY3RBSnJMSFdtSzdTZ2xOdkhQZVZ0R3NRMjRMV292RUV4b3lkZkJNMG1feDViOWdlRE1UVDBTemtJeWxPQXZGYThQTXhTRkdqOGFwUk05ZENDTlpRYTExYm9RN3dBZXNtVGNn?oc=5"
+},
+{
+"title": "Uzbekistan says truck queues at Kazakhstan border are normal",
+"summary": "",
+"url": "https://www.uzdaily.uz/en/uzbekistan-says-truck-queues-at-kazakhstan-border-are-normal/",
+"source": "UzDaily.uz",
+"published": "2026-11-20T12:06:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"物流"
+],
+"score": 6,
+"priority_source": false,
+"id": "99407203389d",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaXVpRUtKVGdCYndFNjhMNXhZYXRCUmNGQjloWl9Mal81QTZtZnVvYWY5SjVQSndNWDlLakp4VFJvODN4ZE85aWt5NmxzRm5mTDV5Z1lHbDhhdmlIR3NOM0ZwYjFyS0FxQ0xmemdhU1laU3E2alVJTWRkSHhSQXI4OXBSTGVTVG1LZU1JNDRKS3k?oc=5"
 },
 {
 "title": "Innoson gets new rival as another firm plans to open vehicle plant in Nigeria",
@@ -6537,6 +7301,32 @@
 "id": "51d3edb73769",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaUlmWVhHYUNuMjJWU2xjeEI5TmREOUoxZVptemlpWUowWndGNUlhcUpMVTl4cmFDVUw1YTFHcHpkeFZYV3BvWXdLN3F5dXdHYVNKbDFibWRydXlJM2hlZmhVcWZaVkcyV1FVd0xLclJrNDNESXNOOVY1a0d2OUdxQTdQdERBc1BDT1pCd2N5bGktX3hfcmY5aFJMZ0Y3QU1Va3BUZ190YnA0N3p4aXZ0U0luM25QUQ?oc=5"
+},
+{
+"title": "Tashkent Airport Passenger Traffic Rises 13.7% in September",
+"summary": "",
+"url": "https://www.uzdaily.uz/en/tashkent-airport-passenger-traffic-rises-137-in-september/",
+"source": "UzDaily.uz",
+"published": "2026-11-20T10:30:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [],
+"score": 5,
+"priority_source": false,
+"id": "16756c883d4f",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPY1NBZGZyelRXVU5QdmlBdzVna1NWN0xDT2JTNUU5SDRhczV0ZTJYRkZQYkIzeHlrY3JhR05KSmk5X2tvYU5wNk5TMVJvZFJVZHJnVzloS2JGUEllQUs4UUFOTDZsTEpoRTJzYVQ2bWNxMG1xN3ZUc2ZkZWhOMDVHSHgxdVNEVWl6cE5FTw?oc=5"
 },
 {
 "title": "ZIM reports US$830M in Q3 net income as freight rates rise",
@@ -6740,6 +7530,34 @@
 "gn_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQUVdySE85YkZiYm5kSXEwb0JHcTV2THUxQWFxNk9uZ2lLYzVyenktODBjZ1hHckFScm9lZGdRS0VUOUl0VDJWVlQtYTJDWkpXNm9PYjgyWUJ6VGpoVjJ6M3NQeUZZNnVWR2tVWFAwc0w3c2ZsSFJWM1BmX3dNOEhOeGdMeVZ3WVlTN3RHOTBhajc4TTJpOTZRbVdPQm5RZ1JFQURJbU03M2ttak5jaEtnRXZSVlJiaFVBaHR3SjAtSWh2WF8weXhtdk1oQjhFZXc?oc=5"
 },
 {
+"title": "Bus services resume on Dhaka-Khulna highway after Gopalganj clashes",
+"summary": "",
+"url": "https://tob.news/bus-services-resume-on-dhaka-khulna-highway-after-gopalganj-clashes/",
+"source": "Daily Times Of Bangladesh",
+"published": "2026-11-20T07:20:14+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Bangladesh\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"BD"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"バングラデシュ"
+],
+"categories": [
+"都市交通"
+],
+"score": 8,
+"priority_source": false,
+"id": "274fe2a6e6b3",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMFZqMHhWd2dKWEhkbW0wS3lmRGZndzFrQ0R4M0tVc0ZnWi13ZzRleVB5LTdLN0tKWHRwN3FUZDlnaGFYM010aUJKbThPaXljY3VhWVc2d2p0QUc1YVRLTTZyYjJ5U01wUDRPXzRqbldGaFhjX2Q4bnpVcnFaU2h5akc2bFA1R2ZUVGdVMG9n?oc=5"
+},
+{
 "title": "Uzbekistan, Afghanistan agree to expand cross-border rail transportation",
 "summary": "",
 "url": "https://daryo.uz/en/2026/11/20/uzbekistan-afghanistan-agree-to-expand-cross-border-rail-transportation/",
@@ -6766,6 +7584,34 @@
 "id": "f11c4fa8084d",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTVg5MlM5QUxHWnpRQmp4WU9ndldINHY4cDVQYmZaSDUxb1Z0VmdRd1F1S005NzJRSFR6TUFuNUhrQmdxLVJ6T2l3RC1VT1Z1allKZzgydjF2dnRpRXcwa2ZiMmtHN1NHeDVMcUliMHVyUlNLSEFQaHZlWG5ldHBObFUtZ2ltdzBSNkR2dUpRZDBtUndGTmhPQmhjRHlIbnMtWGxfb0Nn?oc=5"
+},
+{
+"title": "Sewer Leak Causes Road Collapse Near Borella, Traffic Diverted",
+"summary": "",
+"url": "https://www.newsfirst.lk/2026/11/20/sewer-leak-causes-road-collapse-near-borella-traffic-diverted",
+"source": "Newsfirst",
+"published": "2026-11-20T06:52:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Sri Lanka\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"LK"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"スリランカ"
+],
+"categories": [
+"維持管理"
+],
+"score": 6,
+"priority_source": false,
+"id": "04f1b0838061",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdXBaZjNyUVJYMjZBNVNoa1JJbXhiYktlN1o1eVp5UVZXQWU5X01QWGNfcGV6QnYzN1JfcEg2UEZnRFlSbVVjNlB4dFMtcmFodUJyVGxvSTU5WGg4bFp3ZzRmMXJpNmp6WENwaW5VNjhRLWFZM193ZFZHOTc2eU5mbk4xSWxpLVZrV1VDLUNBc1NsRk5raGFNRHRYOGhPZw?oc=5"
 },
 {
 "title": "Hanoi restricts traffic near My Dinh Stadium",
@@ -6852,6 +7698,92 @@
 "gn_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTUY4M2N2alJwWlJGT2p6aS1nWXk1VThtNVdfRHhkbG5CamRfblEyZE9kNlZvbmw0N0kwMWFVTW45bHdoMnR5MzB4d1NrVGNHYWx4cGR5RU1FMjE3QUxiSGw1dlRaMWUwaHdMWFhfZDdnQmVSeTdpeEZpRFlVQ0wtODdWZWxWR1poNmlkbdIBkgFBVV95cUxNVHJQUUQ1WnlkeXVxbkZHeUV2TTlGUUZ0SlBPTjZ0SURuRlZRRDg4dkdYV0hTRGxxMkxCR05rSUZ6QWY0NTBlWEprVTYyUTFRSTJzdDhDR0pIUE5Pdm5OaDEzZnJWanRZX2lwdEdkM2h1b3FQMEVmS2g2MWE2RUFacVd6RmxMd2VubGZCNXBXVU0yUQ?oc=5"
 },
 {
+"title": "Tashkent metro is taking measures to reduce the load amid rising passenger traffic",
+"summary": "",
+"url": "https://yuz.uz/en/news/v-tashkentskom-metro-prinimayutsya-mer-dlya-snijeniya-nagruzki-na-fone-rosta-passajiropotoka",
+"source": "yuz.uz",
+"published": "2026-11-20T04:21:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"都市交通"
+],
+"score": 6,
+"priority_source": false,
+"id": "b4aac2ba1d29",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbld3aWlhOGNDTWEtR2FHOTF4UDFfcUZPZFd6TFoweVN6LVY2SE1Bd2NqX0lRNWZuaURMMlYyMFZvLVN0WDZaZVRRaTYxa2d6MmRidENJeVU4YkIwSGFHbDNYWlNWY0xKZnRDTFZIa0pULTdfMmxsRTJTZGdGb0EzXy1WLXM4MzlISThVeE5SWWVxd2RxSGJ1YjktWmszRlJPYzVZc2YxUkhFZ2pIZDM4SHVfdlFlQQ?oc=5"
+},
+{
+"title": "AIIB sees scope to attract more private capital into Middle Corridor development - Chief Investment Officer (Interview)",
+"summary": "",
+"url": "https://www.trend.az/casia/kazakhstan/4248459.html",
+"source": "Trend News Agency",
+"published": "2026-11-20T04:00:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" infrastructure (PPP OR loan OR budget OR investment OR ADB OR \"World Bank\" OR JICA OR AfDB OR concession OR tender OR contract)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"投資・予算",
+"インフラ計画",
+"物流"
+],
+"score": 6,
+"priority_source": false,
+"id": "e0d74d6cfea7",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZeFRkVWF6Z0lwVUlBcHU5NzBNRjlxTHlwYXpadzMyMlJDNEhBTlZiRENuM1lxMVRiOGk2Nk5pOFdGRHFtLUJQSDlpOUw5eEhDclpHS25ZS1VQQWV0WnFJ?oc=5"
+},
+{
+"title": "VinFast Assembles Five EV Models in Subang, Targeting Families to Taxi Fleets",
+"summary": "",
+"url": "https://investortrust.id/business/123167/vinfast-assembles-five-ev-models-in-subang-targeting-families-to-taxi-fleets",
+"source": "InvestorTrust",
+"published": "2026-11-20T03:11:00+00:00",
+"lang": "en",
+"via": [
+"GN[ID:en] \"Indonesia\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"ID"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"インドネシア"
+],
+"categories": [
+"脱炭素"
+],
+"score": 4,
+"priority_source": false,
+"id": "f68c560354b9",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObFBKZzMteG9ockFobTFKMjVseXQyclpRVTNfbTZfblpNQ0pncW8zTVpEZ1pKS1BBMEVSZUFlT3o2elpJcmdkNzZ4VDk1NnVVaU9hMjA1SU8xRTNWV2t3clpNQ0J3WUZyWThoa0tmeFp0dFk0MVUtX1RVTVZTRVZBeWpHVElNZmZaTWZCU25QUzRsbGwzRGk0M1R0bVlLQkZLT204aEV5aUJRbTU5VEpuclloUGVuWkZm?oc=5"
+},
+{
 "title": "地域の足の再構築へ、交通空白区に臨時バス路線 滋賀県実証運行",
 "summary": "",
 "url": "https://www.asahi.com/articles/ASVCM4FWZVCMPTJB007M.html",
@@ -6909,6 +7841,34 @@
 "gn_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBNd1p5Ung2ckRXZ3ZQMUF2aEtrZkFjQUxQR0diS3JFQjNuNzViVGpVcmlnam95akwwVkQ1OEhjNUVUblRaNlExeWVMRzBwR052RTZlOQ?oc=5"
 },
 {
+"title": "Philippine News Agency. . Transportation Secretary Vince Dizon on Thursday (Nov. 19, 2026) says the maintenance operator of EDSA Busway elevators has been instructed to restore non-operational units within 24 to 48 hours, amid efforts to ensure daily ele",
+"summary": "",
+"url": "https://www.facebook.com/pnagovph/videos/aqne1n-qn7qa1m-1t3otnkvmy1phyj2gxxjsr_kgy2rvhxecn0r8hlohwll7d8rnvys0napquml6lfbz/1625814541971056/",
+"source": "Facebook",
+"published": "2026-11-20T00:20:55+00:00",
+"lang": "en",
+"via": [
+"GN[PH:en] \"Philippines\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"PH"
+],
+"regions": [
+"ASEAN"
+],
+"country_names": [
+"フィリピン"
+],
+"categories": [
+"維持管理"
+],
+"score": 6,
+"priority_source": false,
+"id": "323a6094bc70",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVTVBcUdwWG9zYlpxUEdpXzZwdHBaNldYTHpPZHhreFp1ekRJQWpJLVp5RE0tZFFYZnVLYkVVSElZX3R0NzFXM29RdHB6dDlMQmRnV085QnBnWUkyZFNxbXBVRFBzTUVOUUgtWE15WFBoUDhDNE0zVWtpV09fUXZQOC1JUXNVR3Q4U3lFLTJtZGZBVVV5Q1F4MzhWRUFHSVVPam95X0lfVW54RzVrX2dHQ1RzeTZmb2pCOGVsWUY4U3FnSmFjUmU3STFBWUdnZl9NbGRYMi13?oc=5"
+},
+{
 "title": "FG, Yutong seal 300-bus CNG deal, revive Ibadan Assembly Plant",
 "summary": "",
 "url": "https://nigeriannewsdirect.com/fg-yutong-seal-300-bus-cng-deal-revive-ibadan-assembly-plant/",
@@ -6936,6 +7896,32 @@
 "id": "07ffc62b4701",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQlk5TzVBSFp5c1R6aEtYRVlkN04zWWo0MVBMQ0cwSVBnMzVEeS1LOE1XdUhhNk1GOWhGTl9SaUxrRGxqU1V0RHozMFJudUxhTmh5aEhkQlM5bnY5b1hXZmxxNmFSZHVkdkl6b20tRnZZYzdCUGJFOXVidnRkSmg2TDlHMVBSem0yNDVvdTNyYnd1UV9XSUR3?oc=5"
+},
+{
+"title": "Hiver 2026-2027 : comment le Maroc prépare ses routes ?",
+"summary": "",
+"url": "https://www.lebrief.ma/video-saison-hivernale-le-maroc-mobilise-986-engins-et-900-agents-100173954/",
+"source": "Lebrief",
+"published": "2026-11-19T23:07:13+00:00",
+"lang": "fr",
+"via": [
+"GN[FR:fr] \"Maroc\" (route OR autoroute OR pont OR péage OR \"sécurité routière\" OR \"transport urbain\" OR bus OR infrastructures routières)"
+],
+"countries": [
+"MA"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"モロッコ"
+],
+"categories": [],
+"score": 5,
+"priority_source": false,
+"id": "40bbbc9af66d",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWGJjbFlpWkNtRWg0c283bF9WMjRuU0p1SkRRdDZrWndvOV92WGtMQXdGR1lfbDVkSjRybTVHU2NscHh1SlNRX2UxaXNycWIwMFhCRjI0Y082Q2dKeWRWU3hoNzRMRjU5SmhXUUlTaEQ5MEUtLUoxczhSQTRqUkVzSkh5NlVsX3phX1NPMlJRSGlWTlZWVmFnMF9xQktpZzZP?oc=5"
 },
 {
 "title": "Iran’s Hormuz ‘Toll Booth’ Set to Hardwire Higher Energy Prices: Bousso",
@@ -7215,6 +8201,60 @@
 "gn_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ0U4NlI1ZG1UcTEycmZQdmlHYXZRaGk0NFVEdTgwb0NjUjNWNFpIaDBWQTdmcnlvM0RHM2RYNWhWbVRZMXNsODl5SWhLUUMxclBqTjBGcnNMWkVpTExWVUJpRlpJSnFESVp4dVRSMUdzbTVBeE1BemxfWmhkVkZyc2kxSzBDTktCUjNhQVg5Z0lOd1J0ajVLZGE2LU5yNXVaTHNXcURId3VYQk9FSFU5a29GTHVpTm1ueUtSQ0l30gG-AUFVX3lxTE9DRTg2UjVkbVRxMTJyZlB2aUdhdlFoaTQ0VUR1ODBvQ2NSM1Y0WkhoMFZBN2ZyeW8zREczZFg1aFZtVFkxc2w4OXlJaEtRQzFyUGpOMEZyc0xaRWlMTFZVQmlGWklKcURJWnh1VFIxR3NtNUF4TUF6bF9aaGRWRnJzaTFLMENOS0JSM2FBWDlnSU53UnRqNUtkYTYtTnI1dVpMc1dxREh3dVhCT0VIVTlrb0ZMdWlObW55S1JDSXc?oc=5"
 },
 {
+"title": "Lagos-Ibadan ​‌‍‍‍‍⁠⁠‍‍‍‍⁠‍‌⁠‌‌​Expressway: FRSC urges motorists to take alternative routes",
+"summary": "",
+"url": "https://www.vanguardngr.com/2026/11/lagos-ibadan-%E2%81%A0%E2%81%A0%E2%81%A0%E2%81%A0expressway-frsc/",
+"source": "Vanguard News",
+"published": "2026-11-19T14:05:02+00:00",
+"lang": "en",
+"via": [
+"GN[NG:en] \"Nigeria\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"NG"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ナイジェリア"
+],
+"categories": [
+"高速道路"
+],
+"score": 8,
+"priority_source": false,
+"id": "408e84a3cf47",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc2lBSDd4SlNFck5wcG5HM0EwT18yLTYxTkJSWGZmUTU5MkZ6MU5pQ3A4aXFLckxoQm5WbDI1NUlTX28xSno0aHlvbW5NV2YtVGJzM3dVcU5ORVNLWVJESFpHUlZZbGpPNk9zQ3RXc051VDRZWTM0R3YtNGFnY1pucHU5alA4ZmZpZG1lc1kwM3Rkd05jOUV1bnRVdWplUE9jem5V0gGoAUFVX3lxTFBaV0h5bDJXbVNTVU9iTi1SOUtaeDRjdmJjbEdtVmx2WFVLOXFZQ0lGd1VkN3RKNktCTGdfWTVLenpMRFlINlZGSXBiUWszZ2lBV3NWNFlzS1I3NUs5dHFZdGRJRVRLMFFSSFhxbWk4aFFtQlBQVTVCVWgzN2JCamw4RkV3cHNGZEVkREtyT3J5ZUZ5Q2RNT1l4d1VUc0VyUXpEUVF0SVRCcA?oc=5"
+},
+{
+"title": "Kyrgyzstan, Turkmenistan discuss China-Kyrgyzstan-Uzbekistan route to Azerbaijan",
+"summary": "",
+"url": "https://www.trend.az/casia/kyrgyzstan/4248480.html",
+"source": "Trend News Agency",
+"published": "2026-11-19T13:46:34+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [],
+"score": 5,
+"priority_source": false,
+"id": "a7fa70f3beda",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ucVlVOGd6Y3hZY2ljV2FPYzNIUUR5RGRpY19yMEZ4QU5VRGtOWWZIZEVXc2F0Rmlxd2lYV21rVmZ6RERzX2xGbk4zNGF3M2ZhYkdZOXNINUlTWHM5SzlZ?oc=5"
+},
+{
 "title": "Ukraine strikes Putin’s bridge, cyberattack fears grow and new James Bond",
 "summary": "",
 "url": "https://english.alarabiya.net/amp/webtv/programs/dailies/2026/11/19/ukraine-strikes-putin-s-bridge-cyberattack-fears-grow-and-new-james-bond",
@@ -7356,6 +8396,34 @@
 "gn_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMjViTTc4YXZTVTFqbC1zUHhTLWNnZFhDNG5GN3pVb3dkaEVHaU1WcHZENGxhWE9DZVJ3Q0JFTjVDUjdOVzA4RVZhV2Etd05MNWdJNGJVUmZQcDFoaFRHSW13ODF1cE83MjlUV09VRHdiZktNSGZia21XQTMzVTdxS3VXTVZEWEpkT2lOa3lFd0Y4aFJOeXVPNnJkc0UyVm1zeExKeWhmM3VlZ3hoNDZ2aw?oc=5"
 },
 {
+"title": "Afghanistan, Uzbekistan Agree to Boost Rail Freight",
+"summary": "",
+"url": "https://thekabultribune.com/en/0011966",
+"source": "thekabultribune.com",
+"published": "2026-11-19T09:52:00+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"物流"
+],
+"score": 6,
+"priority_source": false,
+"id": "721bdc16cbdb",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00c2lHWHRaTi1PNmF5R2ptcmRYdDVNYmVDVkc2Q3Nla2dWREJWT09VZ3Nham1vUk5EZlUxZko1OTNGcmhyX1ZxcVZYT0hCblE?oc=5"
+},
+{
 "title": "Bridge collapses on India's Patiala-Sangrur highway, two trucks left dangling over Bhakra canal",
 "summary": "",
 "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/19/bridge-collapses-on-india039s-patiala-sangrur-highway-two-trucks-left-dangling-over-bhakra-canal",
@@ -7384,6 +8452,64 @@
 "id": "fc04f0206893",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNY2RtcFluSW9OZWJtTm9XV1FLQXlHYXdpN0lKRGVxZE1rUG9VTzNxN191ZG5yR0t6MkhlYzJCMnJpZ3E1eEV6RUYxNl9iNERVbS11TXpJRzR2ZUJSNUwtMUdLd2ZVSVplZ2pRbDUxdUYzMkdNN0xaVW9MNExnUzFVMmNvRUlqYXd0SmJyeXJxdmlfUTU5cjBXX2dZaXlsN3RXeGkwMG94eE1vZ0pKc25pM2JJNXdoR01vV1RGQVB1clVfYUxqRVdxUFdOdUpmcWZDM0QyVmtyQnpfSzZteUl0bFpBYnlHRG5xVjc1VGtoU2Y?oc=5"
+},
+{
+"title": "Khénifra : routes, eau et sport au cœur d’une série de projets de développement",
+"summary": "",
+"url": "https://www.infomediaire.net/khenifra-projets-routes-eau-sport/",
+"source": "Infomédiaire",
+"published": "2026-11-19T09:25:59+00:00",
+"lang": "fr",
+"via": [
+"GN[FR:fr] \"Maroc\" (route OR autoroute OR pont OR péage OR \"sécurité routière\" OR \"transport urbain\" OR bus OR infrastructures routières)"
+],
+"countries": [
+"MA"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"モロッコ"
+],
+"categories": [
+"インフラ計画"
+],
+"score": 4,
+"priority_source": false,
+"id": "ab82155c533d",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAxMHN1bzhNQ3A3ZWFHT0RLMXM4VUhwV3lOSjFWdUxwTy1oWkUxWDF2dnBsMlFyRmwzUC1XY3lyd0dCTlI3UzNmeEd5SE9wMDVHMWpvckJXZFV3dnFPSC11TF9BUnl5REdHLThjVGFlME0?oc=5"
+},
+{
+"title": "USD 22 billion in rail investment for the Middle Corridor",
+"summary": "",
+"url": "https://www.railwaypro.com/wp/usd-22-billion-in-rail-investment-for-the-middle-corridor/",
+"source": "Railway PRO",
+"published": "2026-11-19T09:14:30+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" infrastructure (PPP OR loan OR budget OR investment OR ADB OR \"World Bank\" OR JICA OR AfDB OR concession OR tender OR contract)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"投資・予算",
+"インフラ計画",
+"物流"
+],
+"score": 6,
+"priority_source": false,
+"id": "f59672f16206",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdkRrMjYyNFhCY254YkJ0ellpbklNekUxZEhfWW16TGJuRWt6dTRPTTZkQ0MtVlI2a2t3TXNQa2hUU1RlM0pSYjhoNzE0cmdIekZ2SWZlcTQ0OS02cW1yRnQxTWpzSkhKOGZWWUJmTDBaOU5wTVFCTGJTNmhDRmtBN1FHYkJFWE9zTF9GaUJXRXNEdw?oc=5"
 },
 {
 "title": "LGUs seek faster EV charging permits as cities advance local e-mobility plans",
@@ -7440,6 +8566,34 @@
 "id": "f312a099cc07",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOSVVhZnJhZjJhQUZyT2EtVGhCWXJNQVYzU0swNjJ0Z0N2Q05RaGV3U1ZyZWh0eDRhTnpRTmRibE05amg4YUxpenI1OUhTWTRVd0g1NUpMbFN5M2NNeVBtcklqYWJQVU8tT052RndkUDNOd0UzTlBKLXJvY1ZSMXd5U1VzS2wzZGhrQ243N1Zwa1E0TXRfbllfOE9uVzZnc3Z0aE5pclNEMEpjRGlPZGFMZVpWZmlXUjlBSnU0MVlwX0k4aGMwaXVOb1g0S2F5dVhhWE1vSUlILXk4UDBEd0pqMTZTZmZET3hldlJPUXBsdS1qOHhfOUl1M0RlUjQ1YXExVVV1UnY1ZFk4TmdKWGE1YkU4VXNMZklQN2F2cmQ2MA?oc=5"
+},
+{
+"title": "Uzbekistan, Afghanistan agree to launch Hairatan–Mazar-i-Sharif rail freight",
+"summary": "",
+"url": "https://www.trend.az/casia/uzbekistan/4248281.html",
+"source": "Trend News Agency",
+"published": "2026-11-19T08:40:48+00:00",
+"lang": "en",
+"via": [
+"GN[US:en] \"Uzbekistan\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"UZ"
+],
+"regions": [
+"中東・中央アジア"
+],
+"country_names": [
+"ウズベキスタン"
+],
+"categories": [
+"物流"
+],
+"score": 6,
+"priority_source": false,
+"id": "daa1dd580b7e",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RZGFfd1hlTHpaalpDOTVZUjAxb01sVlhQU2FEZHpTYzdqUHhLek9zVzc0bmhaVWJXczhueER5cUVkYXg1Qncxc3V6SXFrNlBJQ2xTcnhRMzZrRU44aUtV?oc=5"
 },
 {
 "title": "Major Road Incident on Makran Coastal Highway in Pasni - Aaj News",
@@ -7582,6 +8736,32 @@
 "gn_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPeU9FeDhHRXJtSFoxMmlXdW1mMHpQMGtZY3ctbHZaRWh1M24yYU43cndmVDNGazBFbURJTk9wTmhlTEhkMVhjbGFMZ21CcnY2RjZMWjZDVTBJbk1HLTJyd01GY2tNQlE1VUlkbzBURVQ0U3FwU0hNZjBJMGVYSlVCOXkwbjMyNHF0UFdZTTJDTGdrMXdGZXYySW52OE5vSGZGbEZGSjhWcDhrRTNJTlFQMGcxLXJKMGMxNGdMUTUzYnJ0dVVEU0JFcS1HLUlTVkUtSWREcWpmQmd4UQ?oc=5"
 },
 {
+"title": "Africa Faces $108B Infrastructure Gap as EACE Convention Urges Better, Faster Engineering",
+"summary": "",
+"url": "https://ethiopianbusinessreview.net/africa-faces-108b-infrastructure-gap-as-eace-convention-urges-better-faster-engineering/",
+"source": "Ethiopian Business Review",
+"published": "2026-11-19T08:00:00+00:00",
+"lang": "en",
+"via": [
+"GN[ET:en] \"Ethiopia\" infrastructure (PPP OR loan OR budget OR investment OR ADB OR \"World Bank\" OR JICA OR AfDB OR concession OR tender OR contract)"
+],
+"countries": [
+"ET"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"エチオピア"
+],
+"categories": [],
+"score": 6,
+"priority_source": true,
+"id": "b649c011c6a0",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeXVTblZFZDR1RGxYVzNvYnRmdmxTTUVjRTdlSkI1bDBBWXBtWmFOaXlaeU5UQXNnajZ5OVE0bC1aa3NFb0I4eUJUaVB6V0ZCUHY2aVNpZ2g0MTRXWkxwQjNpSmJ6bThuczRtNmxTT3F1YlVlVExRVUY3QnVUREZ5WHpyU3N3RzRrOWV0MUpNc05tbmZUTUhpQW9TdzJOdlYtQU1mX3Boa2FuTk1hVWNJMEJ6OWpZSUE1Vl9qZlB1ODRUQQ?oc=5"
+},
+{
 "title": "Nepal rescue focused on workers trapped in three tunnels",
 "summary": "",
 "url": "https://ddnews.gov.in/en/nepal-rescue-focused-on-workers-trapped-in-three-tunnels/",
@@ -7608,6 +8788,35 @@
 "id": "5f79b84c6296",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZTJHeDdpNnhsSTFBeTdlcGdudzJXaEdQNzVITnBFUXdZYWZIVk1DYkt3eFo1dWcyTmdXdG1QbzFXaXJzdTJibUhsNXlmSS1yd1hQMmtBR0hSU0NxdzdsM01kOFFyNHZOWUduYk1JUjE2X1R1TVZhSFBZLS1jVXJoUDlvUDFQVWNidnc?oc=5"
+},
+{
+"title": "Addis Ababa Launches 57-Hectare Urban Corridor Project",
+"summary": "",
+"url": "https://birrmetrics.com/addis-ababa-launches-57-hectare-urban-corridor/",
+"source": "Birr Metrics",
+"published": "2026-11-19T06:49:26+00:00",
+"lang": "en",
+"via": [
+"GN[ET:en] \"Ethiopia\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)"
+],
+"countries": [
+"ET"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"エチオピア"
+],
+"categories": [
+"インフラ計画",
+"物流"
+],
+"score": 7,
+"priority_source": false,
+"id": "70db26586587",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1PUE5obEg0d3NVRkpCMW1rTk1BLWlaVkxhNW1GRVdnR1FvbklSdHJORm5aUldwVGVyZndrZGpzcUQteHhKa1BkSXY0cmFZbS1TdmtzQjJJTXB0OUxKMnZaWmFLd0R4SG9feVhCUjE2V2hvYXBqTjlsSzdlYw?oc=5"
 },
 {
 "title": "GMA News. . WATCH: Police officers in Baguio City assisted an Australian national after the rear wheel of his vehicle slips off an elevated pavement while maneuvering. Authorities also encouraged the public to report emergencies and seek help through Unifi",
@@ -7691,6 +8900,37 @@
 "id": "b0419945416f",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPekpORlE5VnAwWXlOZWtFaUFOQVg5YXZteFZlSkRkaWxLcWdlR1lVU0VwQkNPd29ZeFFfRlhNRk9nbUVxQVlBcWh5R3NIMGFocHR1UU91ZjVOSERrWWQ3WFN2X0xnb2JaTElRZ3IyVGRzYzJYU25XMDFxUVJTdldRcGZrSTRuMFV2blVnbG15OV9KUQ?oc=5"
+},
+{
+"title": "Truck drivers stranded at Kenya-Ethiopian border after ethnic clashes paralyse key trade route",
+"summary": "",
+"url": "https://citizen.digital/article/truck-drivers-stranded-at-kenya-ethiopia-border-after-ethnic-clashes-paralyse-key-trade-route-n394143",
+"source": "Citizen Digital",
+"published": "2026-11-19T04:16:44+00:00",
+"lang": "en",
+"via": [
+"GN[ET:en] \"Ethiopia\" (\"road safety\" OR traffic OR \"public transport\" OR bus OR \"EV charging\" OR \"electric vehicle\" OR logistics OR autonomous OR cycling OR congestion)",
+"GN[ET:en] \"Ethiopia\" (road OR highway OR expressway OR motorway OR bridge OR flyover OR toll OR tunnel)"
+],
+"countries": [
+"KE",
+"ET"
+],
+"regions": [
+"アフリカ"
+],
+"country_names": [
+"ケニア",
+"エチオピア"
+],
+"categories": [
+"物流"
+],
+"score": 8,
+"priority_source": false,
+"id": "14586855fe18",
+"collected": "2026-11-22",
+"gn_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeEZRV05yemlVdTdaWkxGZHU5ekduODB4N2ZCMXRKVVJQSU5uNVNsQTVCSWRkX2RSNGVXNVlWZDNkRWZLWm5LaWhMNm1rY25GaXFDUFNzQ1FpaHl2R0RONFJVNkJNSExJVV9iUFE2MHUyVGVLVlhMc1QyX2Z4cTkzY2J3T0t6TmtvazNRWVNFaFY0RE44MFR2WHJMMjhDSVdKQlhZYm5XQ1lERlpsZGdNRV9UZGJzRm56NkRaeWN0QzJ0SklvN3RDQWFjc2FqZw?oc=5"
 },
 {
 "title": "Addressing traffic congestion in some industrial zones.",
@@ -7885,6 +9125,63 @@
 "id": "06a48feeabfb",
 "collected": "2026-11-22",
 "gn_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAxbHNWRGtYQUZPU0ducE9JVEdnMTNRVFA5eENhcEx1WHR0ZVFfTmVvT0pGLUUtWlMtYVc1NXg2ZTFZZWlrczRSWXhOVmF2TnRo?oc=5"
+},
+{
+"title": "What happens to passengers’ belongings after a road accident?",
+"summary": "Families repeatedly complain about missing cash, jewellery, and phones after crashes, exposing shortcomings in how victims’ possessions are collected, documented, and returned.",
+"url": "https://kathmandupost.com/national/2026/11/22/what-happens-to-passengers-belongings-after-a-road-accident",
+"source": "Kathamndu post RSS",
+"published": "",
+"lang": "",
+"via": [
+"RSS Kathmandu Post"
+],
+"countries": [
+"NP"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"ネパール"
+],
+"categories": [
+"交通安全"
+],
+"score": 4,
+"priority_source": false,
+"id": "bb2692a401ee",
+"collected": "2026-11-22"
+},
+{
+"title": "Delhi positive on $2 billion Nepal aid proposal, new air route yet to be agreed",
+"summary": "Prime Minister Balendra Shah and his Indian counterpart Narendra Modi are scheduled to hold delegation-level talkson Monday, with several agreements due to be signed.",
+"url": "https://kathmandupost.com/national/2026/11/22/delhi-positive-on-2-billion-nepal-aid-proposal-new-air-route-yet-to-be-agreed",
+"source": "Kathamndu post RSS",
+"published": "",
+"lang": "",
+"via": [
+"RSS Kathmandu Post"
+],
+"countries": [
+"IN",
+"NP"
+],
+"regions": [
+"南アジア・トルコ"
+],
+"country_names": [
+"インド",
+"ネパール"
+],
+"categories": [
+"投資・予算",
+"インフラ計画"
+],
+"score": 7,
+"priority_source": false,
+"id": "c43910391bad",
+"collected": "2026-11-22"
 },
 {
 "title": "MANILA, Philippines — President Ferdinand Marcos Jr. has ordered the Department of Transportation (DOTr) and the Toll Regulatory Board (TRB) to prepare for the rollout of a barrier-less toll collection system on all expressways before the end of the year, sta",
