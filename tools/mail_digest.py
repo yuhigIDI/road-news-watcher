@@ -1,4 +1,5 @@
 """Claudeの処理結果（data/enrich/YYYY-MM-DD.json）から、要約付きのメールとExcelを作って送る
+（メール本文はその日の分、Excelはその月の1日からその日までの分）
 
   python tools/mail_digest.py data/enrich/2026-11-21.json [--dry-run 出力フォルダ]
 
@@ -90,31 +91,47 @@ def write_excel(path, items, countries):
     wb = Workbook()
     ws = wb.active
     ws.title = "候補記事"
-    head = ["判定", "地域", "国", "見出し（和訳）", "要点", "関係なしの理由", "見出し（原文）", "媒体", "公開日", "分類", "URL", "注意"]
+    head = ["収集日", "判定", "地域", "国", "見出し（和訳）", "要点", "関係なしの理由", "見出し（原文）", "媒体", "公開日", "分類", "URL", "注意"]
     ws.append(head)
+    # 新しい収集日が上、同じ日の中は関係あり→関係なし
     rows = sorted(_sort(items, countries), key=lambda x: -(x.get("rel") or 0))
+    rows = sorted(rows, key=lambda x: x.get("c", ""), reverse=True)
     for x in rows:
         co = x.get("co") or []
         url = x.get("orig") or x.get("u")
         note = "・".join(f for f, on in (("転載サイト", x.get("repost")), ("元URL未取得", x.get("gu") and not x.get("orig"))) if on)
-        ws.append(["関係あり" if x.get("rel") == 1 else "関係なし", region.get(co[0], "") if co else "",
+        ws.append([x.get("c", ""), "関係あり" if x.get("rel") == 1 else "関係なし", region.get(co[0], "") if co else "",
                    "・".join(names.get(c, c) for c in co), x.get("j", ""), x.get("pts", ""), x.get("why", ""),
                    x.get("t", ""), x.get("s", ""), x.get("p") or x.get("c", ""), " / ".join(x.get("ca") or []), url, note])
-        cell = ws.cell(row=ws.max_row, column=11)
+        cell = ws.cell(row=ws.max_row, column=12)
         cell.hyperlink = url
         cell.font = Font(color="1F4E79", underline="single")
-    for i, w in enumerate([9, 12, 12, 45, 70, 30, 45, 18, 11, 24, 30, 12], 1):
+    for i, w in enumerate([11, 9, 12, 12, 45, 70, 30, 45, 18, 11, 24, 30, 12], 1):
         ws.column_dimensions[ws.cell(row=1, column=i).column_letter].width = w
     for c in ws[1]:
         c.font = Font(bold=True, color="FFFFFF")
         c.fill = PatternFill("solid", fgColor="1F4E79")
     for row in ws.iter_rows(min_row=2):
         for c in row:
-            c.alignment = Alignment(vertical="top", wrap_text=c.column in (4, 5, 6, 7, 10))
-    ws.freeze_panes = "D2"
+            c.alignment = Alignment(vertical="top", wrap_text=c.column in (5, 6, 7, 8, 11))
+    ws.freeze_panes = "E2"
     ws.auto_filter.ref = ws.dimensions
     wb.save(path)
     return path
+
+
+def month_items(path):
+    """その月（1日〜この日）の data/enrich/YYYY-MM-DD.json をまとめる。月が替わると新しいExcelになる"""
+    import glob
+    day = os.path.splitext(os.path.basename(path))[0]
+    files = [f for f in sorted(glob.glob(os.path.join(os.path.dirname(path), f"{day[:7]}-*.json")))
+             if os.path.basename(f)[:10] <= day]
+    by = {}
+    for f in files:
+        with open(f, encoding="utf-8") as fh:
+            for x in json.load(fh):
+                by[x["id"]] = x
+    return list(by.values())
 
 
 def main(argv):
@@ -127,7 +144,8 @@ def main(argv):
     body = email_html(items, countries, day, os.environ.get("ARTIFACT_URL", ""))
     out = dry or os.path.join(ROOT, "output")
     os.makedirs(out, exist_ok=True)
-    xlsx = write_excel(os.path.join(out, f"monitor_{day}.xlsx"), items, countries)
+    # Excelはその月の分をまとめたもの（例 monitor_2026-11.xlsx）。メール本文はその日の分
+    xlsx = write_excel(os.path.join(out, f"monitor_{day[:7]}.xlsx"), month_items(path), countries)
     n = sum(1 for x in items if x.get("rel") == 1)
     subject = f"【モニター記事】{day} 関係あり{n}件（要約付き）"
     if dry:
