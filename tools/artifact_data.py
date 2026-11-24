@@ -4,7 +4,7 @@
   python tools/artifact_data.py prepare <repoのdata/articles.json> <前日のarticles.json> <todo.json>
       → Claudeがまだ処理していない記事（和訳・要点・判定が未作成）を todo.json に書き出す
   python tools/artifact_data.py build <repoのdata/articles.json> <前日のarticles.json> <enrich.json> <出力フォルダ>
-      → 直近1日分（今回処理した記事と最新の収集日の記事）の articles.json と meta.json を出力フォルダに書く
+      → 直近1か月分の articles.json と meta.json を出力フォルダに書く
   python tools/artifact_data.py daily <出力フォルダ/articles.json> <enrich.json> <repoのdata/enrich>
       → 今回処理した記事だけを data/enrich/YYYY-MM-DD.json に書く（GitHubがこれを受けて要約付きメールを送る）
 
@@ -18,7 +18,8 @@ import sys
 from datetime import date, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-KEEP_DAYS = 60   # repoのデータから処理対象を探す範囲（共有画面に載せるのは直近1日分）
+KEEP_DAYS = 60   # repoのデータから処理対象を探す範囲
+SHOW_DAYS = 30   # 共有画面に載せる範囲（収集日がこの日数以内）
 ENRICH_KEYS = ("j", "pts", "rel", "why", "repost", "orig")
 # Claudeに回す（＝共有画面に載せる）記事の条件。処理量と利用量を抑えるため
 MIN_SCORE = int(os.environ.get("ARTIFACT_MIN_SCORE", 6))   # 関連度がこれ未満の記事は載せない
@@ -47,7 +48,7 @@ def _target(x, prev):
 
 def _prev_map(prev):
     """前回の共有画面のデータに、data/enrich/*.json（これまでの処理結果の記録）を合わせる。
-    共有画面は直近1日分しか持たないので、処理済みかどうかは記録の方で判断する"""
+    共有画面は直近1か月分しか持たないので、処理済みかどうかは記録の方で判断する"""
     import glob
     done = {}
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "enrich", "*.json"))):
@@ -103,9 +104,9 @@ def build(repo_json, prev_json, enrich_json, out_dir):
             "co": x.get("countries", []), "ca": x.get("categories", []), "sc": x.get("score", 0),
             "su": (x.get("summary") or "")[:300],
         })
-    # 共有画面に載せるのは直近1日分：今回処理した記事と、最新の収集日の記事
-    latest = max((a["c"] for a in out), default="")
-    out = [a for a in out if a["id"] in enrich or a["c"] == latest]
+    # 共有画面に載せるのは直近1か月分（画面で収集日を絞り込める。初期表示は最新の日）
+    cutoff = (date.today() - timedelta(days=SHOW_DAYS)).isoformat()
+    out = [a for a in out if a["id"] in enrich or a["c"] >= cutoff]
     out.sort(key=lambda a: (a["c"], a["sc"]), reverse=True)
     with open(os.path.join(ROOT, "config", "countries.yaml"), encoding="utf-8") as f:
         countries = yaml.safe_load(f)
