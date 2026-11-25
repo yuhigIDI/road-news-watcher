@@ -32,9 +32,6 @@ jobs:
           VIEWER_URL: ${{ vars.VIEWER_URL }}
           MIN_SCORE: ${{ vars.MIN_SCORE || '4' }}
           TRANSLATE: ${{ vars.TRANSLATE || 'off' }}
-          # 元記事の本文を読んで判定・要約する（ANTHROPIC_API_KEY が必要。本文は保存しない）
-          SUMMARIZE: ${{ vars.SUMMARIZE || 'on' }}
-          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
         run: python -m watcher
       - name: Excelを成果物として保存（30日）
         uses: actions/upload-artifact@v4

@@ -58,33 +58,7 @@ def _prev_map(prev):
     for x in (prev if isinstance(prev, list) else []):
         if x.get("rel") in (0, 1) or x["id"] not in done:
             done[x["id"]] = x
-    # GitHub Actions が本文を読んで作った要約（data/summaries/*.json）を合わせる。
-    # 未処理の記事にはそのまま使い、処理済みでも本文を確認できていない要約なら、本文確認済みの要約で置き換える
-    for path in sorted(glob.glob(os.path.join(ROOT, "data", "summaries", "*.json"))):
-        for i, s in _load(path, {}).items():
-            cur = done.get(i)
-            if (not cur or cur.get("rel") not in (0, 1)
-                    or (s.get("basis") == "body" and cur.get("rel") == 1 and _rank(cur) < 3)):
-                done[i] = dict(cur or {}, id=i, **{k: s[k] for k in ENRICH_KEYS if k in s})
     return done
-
-
-def _rank(x):
-    """要約の確かさ：3=本文確認、2=関連報道・同じ話題、1=概要のみ、0=要約不可・未処理"""
-    p = x.get("pts") or ""
-    if not p or "要約不可" in p:
-        return 0
-    if "提供された概要等に基づく" in p:
-        return 1
-    if "関連報道に基づく" in p or p.startswith("上の記事と同じ話題"):
-        return 2
-    return 3
-
-
-def summaries_today():
-    from datetime import datetime, timedelta, timezone
-    day = datetime.now(timezone(timedelta(hours=9))).date().isoformat()
-    return day, _load(os.path.join(ROOT, "data", "summaries", f"{day}.json"), {})
 
 
 def prepare(repo_json, prev_json, todo_json):
@@ -152,20 +126,14 @@ def build(repo_json, prev_json, enrich_json, out_dir):
         json.dump(meta, f, ensure_ascii=False)
     missing = [a["id"] for a in out if a["rel"] not in (0, 1)]
     print(f"出力 {len(out)} 件（未処理 {len(missing)} 件）→ {out_dir}")
-    _, pre = summaries_today()
-    news = [a for a in out if a["id"] in enrich or a["id"] in pre]
-    r = [a for a in news if a["rel"] == 1]
-    kinds = {"本文確認": 3, "関連報道・同じ話題": 2, "概要のみ": 1, "要約不可": 0}
-    print("今回分：関係あり %d 件／関係なし %d 件　" % (len(r), sum(1 for a in news if a["rel"] == 0))
-          + "／".join(f"{k} {sum(1 for a in r if _rank(a) == v)}件" for k, v in kinds.items())
-          + f"　元URL未取得 {sum(1 for a in r if a['gu'])}件")
 
 
 def daily(articles_json, enrich_json, dest_dir):
-    """今回Claudeが処理した記事と、今日 GitHub Actions が要約した記事を data/enrich/YYYY-MM-DD.json（日本時間の日付）に書く。
+    """今回Claudeが処理した記事だけを data/enrich/YYYY-MM-DD.json（日本時間の日付）に書く。
     公開リポジトリなので、元記事の概要（su）は入れない。これが届くとGitHubがメールを送る。"""
-    day, pre = summaries_today()
-    ids = set(_load(enrich_json, {})) | set(pre)   # Claudeが処理した記事＋GitHub Actionsが今日要約した記事
+    from datetime import datetime, timedelta, timezone
+    day = datetime.now(timezone(timedelta(hours=9))).date().isoformat()
+    ids = set(_load(enrich_json, {}))
     rows = [{k: v for k, v in a.items() if k != "su"} for a in _load(articles_json, []) if a["id"] in ids]
     os.makedirs(dest_dir, exist_ok=True)
     path = os.path.join(dest_dir, f"{day}.json")
