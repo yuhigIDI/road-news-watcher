@@ -1,0 +1,48 @@
+name: summarize
+
+# 収集済みの記事について、元記事の本文を読んで判定・要約をやり直す（手動実行）
+# 例：その日の要約を本文確認版に差し替えたいとき。結果は data/summaries/YYYY-MM-DD.json（本文は保存しない）
+on:
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "収集日（例 2026-11-25）。空欄なら今日"
+        required: false
+      force:
+        description: "要約済みの記事もやり直す"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 本文を読んで要約
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
+        run: |
+          d="${{ github.event.inputs.day }}"
+          [ -z "$d" ] && d=$(TZ=Asia/Tokyo date +%F)
+          python -m watcher.summarize --day "$d" ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+      - name: 結果をコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/summaries
+          git diff --cached --quiet || git commit -m "summarize: ${{ github.event.inputs.day || 'today' }} [skip ci]"
+          git pull --rebase origin main && git push

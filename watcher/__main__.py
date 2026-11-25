@@ -13,6 +13,7 @@ from .report import email_html, write_excel, write_viewer_data
 from .store import Store, append_archive, dedupe
 from .translate import translate_items
 from .resolve import resolve_google_urls
+from .summarize import run as summarize_items
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JST = timezone(timedelta(hours=9))
@@ -59,6 +60,10 @@ def main():
     n_ja = translate_items(new)
     if n_ja:
         logging.info("見出し和訳 %d 件", n_ja)
+    try:  # 本文を読んで判定・要約（本文は保存しない。結果は data/summaries/ に）
+        summarize_items(new, today)
+    except Exception as ex:
+        logging.warning("要約の作成に失敗: %s", ex)
     store.prune(today)
     for it in new:  # 本文全文は保存しない（公開リポジトリに記事本文を載せないため）
         it.pop("body", None)
