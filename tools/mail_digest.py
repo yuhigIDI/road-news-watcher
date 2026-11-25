@@ -42,6 +42,9 @@ def _sort(items, countries):
 def email_html(items, countries, day, viewer_url=""):
     e = html.escape
     names = {c["code"]: c["name"] for c in countries}
+    # 前日までの記事で、Perplexityの要約を取り込んだもの（別枠で載せる）
+    upd = [x for x in items if x.get("px") and x.get("c") != day and x.get("rel") == 1]
+    items = [x for x in items if x not in upd]
     rel_all = [x for x in items if x.get("rel") == 1]
     rel = [x for x in rel_all if not (x.get("pts") or "").startswith("上の記事と同じ話題")]
     dup = len(rel_all) - len(rel)
@@ -80,7 +83,18 @@ def email_html(items, countries, day, viewer_url=""):
                          f"<span style='line-height:1.6'>{e(x.get('pts') or '（要点なし）')}</span><br>"
                          f"<span style='color:#777;font-size:12px'>{e(x.get('s',''))}｜{e(x.get('p') or x.get('c',''))}"
                          f"｜{e(' / '.join((x.get('ca') or [])[:4]))}</span></div>")
-    p.append("<p style='color:#999;font-size:11px;margin-top:20px'>要点はClaudeが見出し・概要・本文から作成したものです。"
+    if upd:
+        p.append("<h3 style='font-size:15px;border-bottom:2px solid #B45309;padding-bottom:2px;margin:22px 0 6px'>"
+                 f"前日までの記事の要約更新（Perplexityで確認）{len(upd)}件</h3>")
+        for x in _sort(upd, countries):
+            url = x.get("orig") or x.get("u")
+            p.append("<div style='margin:0 0 12px 12px'>"
+                     f"<a href='{e(url)}' style='font-weight:bold;color:#1F4E79'>{e(x.get('j') or x.get('t'))}</a>"
+                     f"　<span style='color:#777;font-size:12px'>［{e('・'.join(names.get(c, c) for c in (x.get('co') or [])))}｜収集 {e(x.get('c',''))}］</span><br>"
+                     f"<span style='line-height:1.6'>{e(x.get('pts') or '')}</span><br>"
+                     f"<span style='color:#777;font-size:12px'>{e(x.get('s',''))}｜{e(x.get('p') or x.get('c',''))}</span></div>")
+    p.append("<p style='color:#999;font-size:11px;margin-top:20px'>要点はClaudeが見出し・概要・本文から作成したものです"
+             "（末尾に「Perplexityの要約」とあるものは、共有画面でPerplexityの答えを取り込んだもの）。"
              "数値・固有名詞は元記事で確認してください。</p></div>")
     return "\n".join(p)
 
@@ -99,7 +113,8 @@ def write_excel(path, items, countries):
     for x in rows:
         co = x.get("co") or []
         url = x.get("orig") or x.get("u")
-        note = "・".join(f for f, on in (("転載サイト", x.get("repost")), ("元URL未取得", x.get("gu") and not x.get("orig"))) if on)
+        note = "・".join(f for f, on in (("転載サイト", x.get("repost")), ("元URL未取得", x.get("gu") and not x.get("orig")),
+                                          ("Perplexityの要約", x.get("px"))) if on)
         ws.append([x.get("c", ""), "関係あり" if x.get("rel") == 1 else "関係なし", region.get(co[0], "") if co else "",
                    "・".join(names.get(c, c) for c in co), x.get("j", ""), x.get("pts", ""), x.get("why", ""),
                    x.get("t", ""), x.get("s", ""), x.get("p") or x.get("c", ""), " / ".join(x.get("ca") or []), url, note])
@@ -146,7 +161,7 @@ def main(argv):
     os.makedirs(out, exist_ok=True)
     # Excelはその月の分をまとめたもの（例 monitor_2026-11.xlsx）。メール本文はその日の分
     xlsx = write_excel(os.path.join(out, f"monitor_{day[:7]}.xlsx"), month_items(path), countries)
-    n = sum(1 for x in items if x.get("rel") == 1)
+    n = sum(1 for x in items if x.get("rel") == 1 and not (x.get("px") and x.get("c") != day))
     subject = f"【モニター記事】{day} 関係あり{n}件（要約付き）"
     if dry:
         with open(os.path.join(out, f"mail_{day}.html"), "w", encoding="utf-8") as f:
