@@ -2,3 +2,10 @@ output/
 __pycache__/
 *.pyc
 .env
+
+# パスワード・メモ類は登録しない
+*パス*.txt
+*password*
+*Password*
+*secret*
+メモ*.txt
