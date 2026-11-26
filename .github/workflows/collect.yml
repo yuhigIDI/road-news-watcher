@@ -18,12 +18,27 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      # 定時実行が遅れて動いたとき、その日の収集がもう済んでいれば何もせずに終わる
+      # （毎朝7:41のClaudeが先に手動で収集を動かすため。手動実行のときは常に収集する）
+      - name: 今日の収集が済んでいるか確認
+        id: guard
+        run: |
+          today=$(TZ=Asia/Tokyo date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && git log --format=%s | grep -qF "collect: $today"; then
+            echo "今日（$today）の収集は済んでいるため、この定時実行は何もしません"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-python@v5
+        if: steps.guard.outputs.skip != 'true'
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+        if: steps.guard.outputs.skip != 'true'
       - name: 収集・分類・通知
+        if: steps.guard.outputs.skip != 'true'
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
@@ -34,6 +49,7 @@ jobs:
           TRANSLATE: ${{ vars.TRANSLATE || 'off' }}
         run: python -m watcher
       - name: Excelを成果物として保存（30日）
+        if: steps.guard.outputs.skip != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: monitor-articles-xlsx
@@ -41,6 +57,7 @@ jobs:
           retention-days: 30
           if-no-files-found: ignore
       - name: データをコミット
+        if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
